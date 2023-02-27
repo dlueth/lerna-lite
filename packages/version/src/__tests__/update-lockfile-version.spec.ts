@@ -1,10 +1,10 @@
-jest.mock('@lerna-lite/core', () => ({
-  ...jest.requireActual('@lerna-lite/core'), // return the other real methods, below we'll mock only 2 of the methods
+jest.mock('@qoopido/lerna.core', () => ({
+  ...jest.requireActual('@qoopido/lerna.core'), // return the other real methods, below we'll mock only 2 of the methods
 }));
 
 import path from 'path';
 import fs from 'fs-extra';
-import core, { Package } from '@lerna-lite/core';
+import core, { Package } from '@qoopido/lerna.core';
 import nodeFs from 'fs';
 import npmlog from 'npmlog';
 
@@ -12,7 +12,7 @@ import npmlog from 'npmlog';
 import loadJsonFile from 'load-json-file';
 
 // helpers
-import { Project } from '@lerna-lite/core/src/project';
+import { Project } from '@qoopido/lerna.core/src/project';
 import { initFixtureFactory } from '@lerna-test/helpers';
 const initFixture = initFixtureFactory(__dirname);
 

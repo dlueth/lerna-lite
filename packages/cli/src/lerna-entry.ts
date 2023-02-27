@@ -1,6 +1,6 @@
 import loadJsonFile from 'load-json-file';
 import path from 'path';
-import { JsonValue } from '@lerna-lite/core';
+import { JsonValue } from '@qoopido/lerna.core';
 
 import changedCmd from './cli-commands/cli-changed-commands';
 import diffCmd from './cli-commands/cli-diff-commands';

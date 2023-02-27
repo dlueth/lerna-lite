@@ -1,6 +1,6 @@
 import path from 'path';
 import log from 'npmlog';
-import { exec, ExecOpts, PackageGraph } from '@lerna-lite/core';
+import { exec, ExecOpts, PackageGraph } from '@qoopido/lerna.core';
 
 /**
  * Retrieve a list of graph nodes for packages that were tagged in a non-independent release.

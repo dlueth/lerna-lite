@@ -1,6 +1,6 @@
 jest.mock('npm-registry-fetch');
-jest.mock('@lerna-lite/core', () => ({
-  ...jest.requireActual('@lerna-lite/core'), // return the other real methods, below we'll mock only 2 of the methods
+jest.mock('@qoopido/lerna.core', () => ({
+  ...jest.requireActual('@qoopido/lerna.core'), // return the other real methods, below we'll mock only 2 of the methods
   otplease: (cb, opts) => Promise.resolve(cb(opts)),
 }));
 

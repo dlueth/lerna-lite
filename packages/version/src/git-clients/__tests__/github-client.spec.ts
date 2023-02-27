@@ -1,8 +1,8 @@
 jest.mock('@octokit/rest');
-jest.mock('@lerna-lite/core');
+jest.mock('@qoopido/lerna.core');
 
 import { Octokit } from '@octokit/rest';
-import { execSync } from '@lerna-lite/core';
+import { execSync } from '@qoopido/lerna.core';
 import { createGitHubClient, parseGitRepo } from '../index';
 
 (execSync as jest.Mock).mockReturnValue('5.6.0');

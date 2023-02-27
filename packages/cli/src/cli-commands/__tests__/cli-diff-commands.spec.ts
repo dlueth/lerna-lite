@@ -1,4 +1,4 @@
-jest.mock('@lerna-lite/diff', () => null);
+jest.mock('@qoopido/lerna.diff', () => null);
 import cliDiff from '../cli-diff-commands';
 
 describe('DiffCommand CLI options', () => {
@@ -8,7 +8,7 @@ describe('DiffCommand CLI options', () => {
     await cliDiff.handler(undefined as any);
 
     expect(consoleSpy).toHaveBeenCalledWith(
-      expect.stringContaining(`"@lerna-lite/diff" is optional and was not found.`),
+      expect.stringContaining(`"@qoopido/lerna.diff" is optional and was not found.`),
       expect.anything()
     );
   });

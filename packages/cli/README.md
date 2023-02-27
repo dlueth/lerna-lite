@@ -1,7 +1,7 @@
 [![Actions Status](https://github.com/lerna-lite/lerna-lite/workflows/CI/badge.svg)](https://github.com/lerna-lite/lerna-lite/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm](https://img.shields.io/npm/dy/@lerna-lite/cli?color=forest)](https://www.npmjs.com/package/@lerna-lite/cli)
-[![npm](https://img.shields.io/npm/v/@lerna-lite/cli.svg?logo=npm&logoColor=fff&label=npm)](https://www.npmjs.com/package/@lerna-lite/cli)
+[![npm](https://img.shields.io/npm/dy/@qoopido/lerna.cli?color=forest)](https://www.npmjs.com/package/@qoopido/lerna.cli)
+[![npm](https://img.shields.io/npm/v/@qoopido/lerna.cli.svg?logo=npm&logoColor=fff&label=npm)](https://www.npmjs.com/package/@qoopido/lerna.cli)
 
 ## Lerna-Lite commands CLI
 
@@ -9,7 +9,7 @@
 
 ---
 
-#### @lerna-lite/cli
+#### @qoopido/lerna.cli
 
 CLI for the `init`, `info`, `publish`, `version` and optional commands, the CLI must be called via `lerna <command>` (where command is any of the commands shown below). You can see some more usage samples below.
 
@@ -19,7 +19,7 @@ CLI for the `init`, `info`, `publish`, `version` and optional commands, the CLI 
 
 ```sh
 # simple install or install it globally with -g
-npm install @lerna-lite/cli -D -W
+npm install @qoopido/lerna.cli -D -W
 
 # then use it `lerna <command>`
 lerna version

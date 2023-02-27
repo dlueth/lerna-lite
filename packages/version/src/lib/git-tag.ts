@@ -1,5 +1,5 @@
 import log from 'npmlog';
-import { exec, ExecOpts } from '@lerna-lite/core';
+import { exec, ExecOpts } from '@qoopido/lerna.core';
 
 import { GitTagOption } from '../models';
 

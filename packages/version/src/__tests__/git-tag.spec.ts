@@ -1,9 +1,9 @@
-import { exec } from '@lerna-lite/core';
+import { exec } from '@qoopido/lerna.core';
 
 import { gitTag } from '../lib/git-tag';
 
-jest.mock('@lerna-lite/core', () => {
-  const { exec } = jest.requireActual('@lerna-lite/core');
+jest.mock('@qoopido/lerna.core', () => {
+  const { exec } = jest.requireActual('@qoopido/lerna.core');
   return {
     __esModule: true,
     exec: jest.fn(exec),

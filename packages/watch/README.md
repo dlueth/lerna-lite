@@ -1,8 +1,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm](https://img.shields.io/npm/dy/@lerna-lite/watch?color=forest)](https://www.npmjs.com/package/@lerna-lite/watch)
-[![npm](https://img.shields.io/npm/v/@lerna-lite/watch.svg?logo=npm&logoColor=fff)](https://www.npmjs.com/package/@lerna-lite/watch)
+[![npm](https://img.shields.io/npm/dy/@qoopido/lerna.watch?color=forest)](https://www.npmjs.com/package/@qoopido/lerna.watch)
+[![npm](https://img.shields.io/npm/v/@qoopido/lerna.watch.svg?logo=npm&logoColor=fff)](https://www.npmjs.com/package/@qoopido/lerna.watch)
 
-# @lerna-lite/watch
+# @qoopido/lerna.watch
 
 ## (`lerna watch`) - Watch command [optional] 👓
 
@@ -15,7 +15,7 @@ Watch for changes within packages and execute commands from the root of the repo
 ## Installation
 
 ```sh
-npm install @lerna-lite/watch -D -W
+npm install @qoopido/lerna.watch -D -W
 
 # then use it (see usage below), sure yeah why not
 lerna watch

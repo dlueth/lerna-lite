@@ -1,13 +1,13 @@
 import fs from 'fs-extra';
 import path from 'path';
-import { Project } from '@lerna-lite/core';
+import { Project } from '@qoopido/lerna.core';
 
 // helpers
 import { gitAdd, gitCommit, gitTag, initFixtureFactory } from '@lerna-test/helpers';
 const initFixture = initFixtureFactory(__dirname);
 
 // file under test
-import { Package } from '@lerna-lite/core';
+import { Package } from '@qoopido/lerna.core';
 import { recommendVersion, updateChangelog } from '../../conventional-commits';
 import { GetChangelogConfig } from '../get-changelog-config';
 

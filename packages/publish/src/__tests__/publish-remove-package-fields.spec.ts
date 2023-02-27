@@ -12,9 +12,9 @@ jest.mock('../../../version/dist/lib/remote-branch-exists', () =>
   jest.requireActual('../../../version/src/lib/__mocks__/remote-branch-exists')
 );
 
-// mocked modules of @lerna-lite/core
-jest.mock('@lerna-lite/core', () => ({
-  ...jest.requireActual('@lerna-lite/core'), // return the other real methods, below we'll mock only 2 of the methods
+// mocked modules of @qoopido/lerna.core
+jest.mock('@qoopido/lerna.core', () => ({
+  ...jest.requireActual('@qoopido/lerna.core'), // return the other real methods, below we'll mock only 2 of the methods
   collectUpdates: jest.requireActual('../../../core/src/__mocks__/collect-updates').collectUpdates,
   throwIfUncommitted: jest.requireActual('../../../core/src/__mocks__/check-working-tree').throwIfUncommitted,
   getOneTimePassword: () => Promise.resolve('654321'),
@@ -25,7 +25,7 @@ jest.mock('@lerna-lite/core', () => ({
 }));
 
 // also point to the local publish command so that all mocks are properly used even by the command-runner
-jest.mock('@lerna-lite/publish', () => jest.requireActual('../publish-command'));
+jest.mock('@qoopido/lerna.publish', () => jest.requireActual('../publish-command'));
 
 // local modules _must_ be explicitly mocked
 jest.mock('../lib/get-packages-without-license', () =>

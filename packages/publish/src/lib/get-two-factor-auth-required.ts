@@ -1,4 +1,4 @@
-import { FetchConfig, ValidationError } from '@lerna-lite/core';
+import { FetchConfig, ValidationError } from '@qoopido/lerna.core';
 
 import { getFetchConfig } from './fetch-config';
 import { getProfileData } from './get-profile-data';

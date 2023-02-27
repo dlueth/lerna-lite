@@ -6,8 +6,8 @@ jest.mock('../lib/remote-branch-exists', () => jest.requireActual('../lib/__mock
 jest.mock('../git-clients/gitlab-client', () => jest.requireActual('../__mocks__/gitlab-client').createGitLabClient);
 jest.mock('../conventional-commits', () => jest.requireActual('../__mocks__/conventional-commits'));
 
-jest.mock('@lerna-lite/core', () => ({
-  ...(jest.requireActual('@lerna-lite/core') as any), // return the other real methods, below we'll mock only 2 of the methods
+jest.mock('@qoopido/lerna.core', () => ({
+  ...(jest.requireActual('@qoopido/lerna.core') as any), // return the other real methods, below we'll mock only 2 of the methods
   Command: jest.requireActual('../../../core/src/command').Command,
   conf: jest.requireActual('../../../core/src/command').conf,
   logOutput: jest.requireActual('../../../core/src/__mocks__/output').logOutput,
@@ -25,7 +25,7 @@ import semver from 'semver';
 
 // mocked modules
 import writePkg from 'write-pkg';
-import { collectUpdates, VersionCommandOption } from '@lerna-lite/core';
+import { collectUpdates, VersionCommandOption } from '@qoopido/lerna.core';
 import { recommendVersion, updateChangelog } from '../conventional-commits';
 
 // helpers

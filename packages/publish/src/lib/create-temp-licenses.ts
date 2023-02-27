@@ -2,7 +2,7 @@ import fs from 'fs-extra';
 import path from 'path';
 import pMap from 'p-map';
 
-import { Package } from '@lerna-lite/core';
+import { Package } from '@qoopido/lerna.core';
 
 /**
  * Create temporary license files.

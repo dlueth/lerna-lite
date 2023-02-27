@@ -1,4 +1,4 @@
-jest.mock('@lerna-lite/changed', () => null);
+jest.mock('@qoopido/lerna.changed', () => null);
 import cliChanged from '../cli-changed-commands';
 
 describe('ChangedCommand CLI options', () => {
@@ -8,7 +8,7 @@ describe('ChangedCommand CLI options', () => {
     await cliChanged.handler(undefined as any);
 
     expect(consoleSpy).toHaveBeenCalledWith(
-      expect.stringContaining('"@lerna-lite/changed" is optional and was not found.'),
+      expect.stringContaining('"@qoopido/lerna.changed" is optional and was not found.'),
       expect.anything()
     );
   });

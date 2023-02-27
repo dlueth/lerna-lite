@@ -4,8 +4,8 @@ jest.mock('npmlog', () => ({
   notice: mockNotice,
 }));
 
-jest.mock('@lerna-lite/core', () => ({
-  ...(jest.requireActual('@lerna-lite/core') as any), // return the other real methods, below we'll mock only 2 of the methods
+jest.mock('@qoopido/lerna.core', () => ({
+  ...(jest.requireActual('@qoopido/lerna.core') as any), // return the other real methods, below we'll mock only 2 of the methods
   Command: jest.requireActual('../../../core/src/command').Command,
   conf: jest.requireActual('../../../core/src/command').conf,
   logOutput: jest.requireActual('../../../core/src/__mocks__/output').logOutput,
@@ -22,13 +22,13 @@ import path from 'path';
 import yargs from 'yargs/yargs';
 
 // mocked modules
-import { collectUpdates } from '@lerna-lite/core';
+import { collectUpdates } from '@qoopido/lerna.core';
 
 // helpers
 import { initFixtureFactory } from '@lerna-test/helpers';
 const initFixture = initFixtureFactory(path.resolve(__dirname, '../'));
 
-import { Project, PackageGraph } from '@lerna-lite/core';
+import { Project, PackageGraph } from '@qoopido/lerna.core';
 
 import { getFilteredPackages } from '../get-filtered-packages';
 import { filterOptions } from '../../../cli/src/filter-options';

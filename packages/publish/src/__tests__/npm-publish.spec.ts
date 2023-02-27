@@ -2,8 +2,8 @@ jest.mock('read-package-json');
 jest.mock('libnpmpublish');
 jest.mock('fs-extra');
 
-jest.mock('@lerna-lite/core', () => ({
-  ...jest.requireActual('@lerna-lite/core'), // return the other real methods, below we'll mock only 2 of the methods
+jest.mock('@qoopido/lerna.core', () => ({
+  ...jest.requireActual('@qoopido/lerna.core'), // return the other real methods, below we'll mock only 2 of the methods
   otplease: (cb, opts) => Promise.resolve(cb(opts)),
   runLifecycle: jest.requireActual('../../../core/src/__mocks__/run-lifecycle').runLifecycle,
 }));
@@ -12,7 +12,7 @@ jest.mock('@lerna-lite/core', () => ({
 import fs from 'fs-extra';
 import { publish } from 'libnpmpublish';
 import readJSON from 'read-package-json';
-import { runLifecycle, Package, RawManifest } from '@lerna-lite/core';
+import { runLifecycle, Package, RawManifest } from '@qoopido/lerna.core';
 
 // helpers
 import path from 'path';
@@ -28,7 +28,7 @@ describe('npm-publish', () => {
   (fs.readFile as any).mockName('fs.readFile').mockResolvedValue(mockTarData);
   (publish as jest.Mock).mockName('libnpmpublish').mockResolvedValue(null);
   (readJSON as jest.Mock).mockName('read-package-json').mockImplementation((file, cb) => cb(null, mockManifest));
-  (runLifecycle as jest.Mock).mockName('@lerna-lite/core').mockResolvedValue(null);
+  (runLifecycle as jest.Mock).mockName('@qoopido/lerna.core').mockResolvedValue(null);
 
   const tarFilePath = '/tmp/test-1.10.100.tgz';
   const rootPath = path.normalize('/test');

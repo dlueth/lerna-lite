@@ -1,5 +1,5 @@
 {
-  "name": "@lerna-lite/version",
+  "name": "@qoopido/lerna.version",
   "description": "Bump version & write changelog of packages changed since the last release",
   "version": "1.15.1",
   "main": "dist/index.js",
@@ -18,7 +18,7 @@
     "pack-tarball": "npm pack"
   },
   "license": "MIT",
-  "author": "Ghislain B.",
+  "author": "Dirk L.",
   "homepage": "https://github.com/lerna-lite/lerna-lite",
   "repository": {
     "type": "git",
@@ -33,7 +33,7 @@
     "npm": ">=8.0.0"
   },
   "dependencies": {
-    "@lerna-lite/core": "workspace:*",
+    "@qoopido/lerna.core": "workspace:*",
     "@octokit/plugin-enterprise-rest": "^6.0.1",
     "@octokit/rest": "^19.0.7",
     "chalk": "^4.1.2",

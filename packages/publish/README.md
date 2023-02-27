@@ -1,8 +1,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm](https://img.shields.io/npm/dy/@lerna-lite/publish?color=forest)](https://www.npmjs.com/package/@lerna-lite/publish)
-[![npm](https://img.shields.io/npm/v/@lerna-lite/publish.svg?logo=npm&logoColor=fff&label=npm)](https://www.npmjs.com/package/@lerna-lite/publish)
+[![npm](https://img.shields.io/npm/dy/@qoopido/lerna.publish?color=forest)](https://www.npmjs.com/package/@qoopido/lerna.publish)
+[![npm](https://img.shields.io/npm/v/@qoopido/lerna.publish.svg?logo=npm&logoColor=fff&label=npm)](https://www.npmjs.com/package/@qoopido/lerna.publish)
 
-# @lerna-lite/publish
+# @qoopido/lerna.publish
 
 ## (`lerna publish`) - Publish command ☁️
 
@@ -14,7 +14,7 @@ Lerna-Lite Publish command, publish package(s) in the current project
 
 ```sh
 # simple install or install it globally with -g
-npm install @lerna-lite/cli -D -W
+npm install @qoopido/lerna.cli -D -W
 
 # then use it (see usage below)
 lerna publish

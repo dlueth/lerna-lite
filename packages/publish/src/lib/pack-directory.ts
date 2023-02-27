@@ -1,5 +1,5 @@
-import { LifecycleConfig, Package, PackConfig, runLifecycle } from '@lerna-lite/core';
-import { tempWrite } from '@lerna-lite/version';
+import { LifecycleConfig, Package, PackConfig, runLifecycle } from '@qoopido/lerna.core';
+import { tempWrite } from '@qoopido/lerna.version';
 import Arborist from '@npmcli/arborist';
 import path from 'path';
 import packlist from 'npm-packlist';

@@ -1,6 +1,6 @@
-// mocked modules of @lerna-lite/core
-jest.mock('@lerna-lite/core', () => ({
-  ...jest.requireActual('@lerna-lite/core'), // return the other real methods, below we'll mock only 2 of the methods
+// mocked modules of @qoopido/lerna.core
+jest.mock('@qoopido/lerna.core', () => ({
+  ...jest.requireActual('@qoopido/lerna.core'), // return the other real methods, below we'll mock only 2 of the methods
   logOutput: jest.requireActual('../../../core/src/__mocks__/output').logOutput,
   promptConfirmation: jest.requireActual('../../../core/src/__mocks__/prompt').promptConfirmation,
   throwIfUncommitted: jest.requireActual('../../../core/src/__mocks__/check-working-tree').throwIfUncommitted,
@@ -18,7 +18,7 @@ jest.mock('../lib/get-two-factor-auth-required', () =>
 jest.mock('../lib/npm-publish', () => jest.requireActual('../lib/__mocks__/npm-publish'));
 
 // also point to the local publish command so that all mocks are properly used even by the command-runner
-jest.mock('@lerna-lite/publish', () => jest.requireActual('../publish-command'));
+jest.mock('@qoopido/lerna.publish', () => jest.requireActual('../publish-command'));
 
 import fs from 'fs-extra';
 import path from 'path';
@@ -28,7 +28,7 @@ import yargParser from 'yargs-parser';
 import writePkg from 'write-pkg';
 import { npmPublish } from '../lib/npm-publish';
 import { npmPublish as npmPublishMock } from '../lib/__mocks__/npm-publish';
-import { promptConfirmation, PublishCommandOption, throwIfUncommitted } from '@lerna-lite/core';
+import { promptConfirmation, PublishCommandOption, throwIfUncommitted } from '@qoopido/lerna.core';
 
 // helpers
 import { commandRunner, gitAdd, gitTag, gitCommit, initFixtureFactory, loggingOutput } from '@lerna-test/helpers';
@@ -43,7 +43,7 @@ const lernaPublish = commandRunner(cliCommands);
 import gitSHA from '@lerna-test/helpers/serializers/serialize-git-sha';
 expect.addSnapshotSerializer(gitSHA);
 
-import coreModule from '@lerna-lite/core';
+import coreModule from '@qoopido/lerna.core';
 
 const createArgv = (cwd: string, ...args: string[]) => {
   args.unshift('publish');

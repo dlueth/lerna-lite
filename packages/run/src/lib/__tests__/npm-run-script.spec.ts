@@ -1,6 +1,6 @@
 // mocked modules
-jest.mock('@lerna-lite/core');
-import { exec, spawnStreaming } from '@lerna-lite/core';
+jest.mock('@qoopido/lerna.core');
+import { exec, spawnStreaming } from '@qoopido/lerna.core';
 import { RunScriptOption, ScriptStreamingOption } from '../../models';
 
 // file under test

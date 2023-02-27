@@ -1,5 +1,5 @@
 {
-  "name": "@lerna-lite/init",
+  "name": "@qoopido/lerna.init",
   "description": "Lerna-Lite init commmand - Create a new Lerna repo or upgrade an existing repo to the current version of Lerna",
   "version": "1.15.1",
   "main": "dist/index.js",
@@ -18,7 +18,7 @@
     "pack-tarball": "npm pack"
   },
   "license": "MIT",
-  "author": "Ghislain B.",
+  "author": "Dirk L.",
   "homepage": "https://github.com/lerna-lite/lerna-lite",
   "repository": {
     "type": "git",
@@ -33,7 +33,7 @@
     "npm": ">=8.0.0"
   },
   "dependencies": {
-    "@lerna-lite/core": "workspace:*",
+    "@qoopido/lerna.core": "workspace:*",
     "fs-extra": "^11.1.0",
     "p-map": "^4.0.0",
     "path": "^0.12.7",

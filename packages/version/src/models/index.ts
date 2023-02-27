@@ -1,4 +1,4 @@
-import { ExecOpts } from '@lerna-lite/core';
+import { ExecOpts } from '@qoopido/lerna.core';
 import { GitRawCommitsOptions, ParserOptions } from 'conventional-changelog-core';
 import { Options as WriterOptions } from 'conventional-changelog-writer';
 import { Options as RecommendedBumpOptions } from 'conventional-recommended-bump';

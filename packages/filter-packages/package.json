@@ -1,5 +1,5 @@
 {
-  "name": "@lerna-lite/filter-packages",
+  "name": "@qoopido/lerna.filter-packages",
   "description": "Lerna-Lite common filtering utils used by a few optional commands (Exec/List/Run/Watch)",
   "version": "1.15.1",
   "main": "dist/index.js",
@@ -18,7 +18,7 @@
     "pack-tarball": "npm pack"
   },
   "license": "MIT",
-  "author": "Ghislain B.",
+  "author": "Dirk L.",
   "homepage": "https://github.com/lerna-lite/lerna-lite",
   "repository": {
     "type": "git",
@@ -33,7 +33,7 @@
     "npm": ">=8.0.0"
   },
   "dependencies": {
-    "@lerna-lite/core": "workspace:*",
+    "@qoopido/lerna.core": "workspace:*",
     "multimatch": "^5.0.0",
     "npmlog": "^7.0.1"
   },

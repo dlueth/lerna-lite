@@ -1,4 +1,4 @@
-import { ExecOpts, getComplexObjectValue } from '@lerna-lite/core';
+import { ExecOpts, getComplexObjectValue } from '@qoopido/lerna.core';
 import dedent from 'dedent';
 import log from 'npmlog';
 

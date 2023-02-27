@@ -2,7 +2,7 @@ jest.mock('nx/src/utils/output', () => undefined);
 jest.mock('../lib/npm-run-script');
 
 // also point to the local run command so that all mocks are properly used even by the command-runner
-jest.mock('@lerna-lite/run', () => jest.requireActual('../run-command'));
+jest.mock('@qoopido/lerna.run', () => jest.requireActual('../run-command'));
 
 // mocked modules
 import { npmRunScript } from '../lib/npm-run-script';

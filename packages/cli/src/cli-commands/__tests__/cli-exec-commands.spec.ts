@@ -1,4 +1,4 @@
-jest.mock('@lerna-lite/exec', () => null);
+jest.mock('@qoopido/lerna.exec', () => null);
 import cliExec from '../cli-exec-commands';
 
 describe('ExecCommand CLI options', () => {
@@ -8,7 +8,7 @@ describe('ExecCommand CLI options', () => {
     await cliExec.handler(undefined as any);
 
     expect(consoleSpy).toHaveBeenCalledWith(
-      expect.stringContaining('"@lerna-lite/exec" is optional and was not found.'),
+      expect.stringContaining('"@qoopido/lerna.exec" is optional and was not found.'),
       expect.anything()
     );
   });

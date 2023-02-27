@@ -1,5 +1,5 @@
 import path from 'path';
-import { Package, Project } from '@lerna-lite/core';
+import { Package, Project } from '@qoopido/lerna.core';
 
 /**
  * Retrieve a list of packages that lack a license file.

@@ -53,7 +53,7 @@
       "request": "launch",
       "runtimeExecutable": "node",
       "runtimeArgs": ["--nolazy", "-r", "tsm"],
-      "args": ["packages/cli/src/cli.ts", "exec", "--scope", " @lerna-lite/core", "echo", "hello"],
+      "args": ["packages/cli/src/cli.ts", "exec", "--scope", " @qoopido/lerna.core", "echo", "hello"],
       "cwd": "${workspaceRoot}",
       "console": "integratedTerminal",
       "internalConsoleOptions": "openOnSessionStart",

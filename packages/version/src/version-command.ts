@@ -25,7 +25,7 @@ import {
   UpdateCollectorOptions,
   ValidationError,
   VersionCommandOption,
-} from '@lerna-lite/core';
+} from '@qoopido/lerna.core';
 
 import { getCurrentBranch } from './lib/get-current-branch';
 import { createRelease, createReleaseClient } from './lib/create-release';

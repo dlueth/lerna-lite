@@ -2,7 +2,7 @@ import fs from 'fs-extra';
 import path from 'path';
 import ssri from 'ssri';
 import tar from 'tar';
-import { Package } from '@lerna-lite/core';
+import { Package } from '@qoopido/lerna.core';
 
 import { Tarball } from '../models';
 

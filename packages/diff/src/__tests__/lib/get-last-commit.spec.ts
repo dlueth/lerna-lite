@@ -2,15 +2,15 @@ import log from 'npmlog';
 
 const execSyncMock = jest.fn();
 
-jest.mock('@lerna-lite/core', () => ({
-  ...(jest.requireActual('@lerna-lite/core') as any), // return the other real methods, below we'll mock only 2 of the methods
+jest.mock('@qoopido/lerna.core', () => ({
+  ...(jest.requireActual('@qoopido/lerna.core') as any), // return the other real methods, below we'll mock only 2 of the methods
   execSync: execSyncMock,
   logOutput: jest.requireActual('../../../../core/src/__mocks__/output').logOutput,
   collectUpdates: jest.requireActual('../../../../core/src/__mocks__/collect-updates').collectUpdates,
 }));
 
 // mocked modules
-import { execSync } from '@lerna-lite/core';
+import { execSync } from '@qoopido/lerna.core';
 
 // file under test
 import { getLastCommit } from '../../lib/get-last-commit';

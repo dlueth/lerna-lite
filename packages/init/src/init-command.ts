@@ -1,10 +1,10 @@
-import { Command, CommandType, exec, InitCommandOption, ProjectConfig } from '@lerna-lite/core';
+import { Command, CommandType, exec, InitCommandOption, ProjectConfig } from '@qoopido/lerna.core';
 import fs from 'fs-extra';
 import path from 'path';
 import pMap from 'p-map';
 import writeJsonFile from 'write-json-file';
 
-const LERNA_CLI_PKG_NAME = '@lerna-lite/cli';
+const LERNA_CLI_PKG_NAME = '@qoopido/lerna.cli';
 
 export function factory(argv: InitCommandOption) {
   return new InitCommand(argv);
@@ -116,7 +116,7 @@ export class InitCommand extends Command<InitCommandOption> {
     }
 
     const lernaConfig: Partial<ProjectConfig> = {
-      $schema: 'node_modules/@lerna-lite/cli/schemas/lerna-schema.json',
+      $schema: 'node_modules/@qoopido/lerna.cli/schemas/lerna-schema.json',
       version,
     };
     if (!this.options.useWorkspaces) {

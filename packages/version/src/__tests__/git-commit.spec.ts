@@ -1,7 +1,7 @@
-jest.mock('@lerna-lite/core');
+jest.mock('@qoopido/lerna.core');
 jest.mock('../utils/temp-write');
 import { EOL } from 'os';
-import { exec } from '@lerna-lite/core';
+import { exec } from '@qoopido/lerna.core';
 import { gitCommit } from '../lib/git-commit';
 import { tempWrite } from '../utils/temp-write';
 import { GitCommitOption } from '../models';

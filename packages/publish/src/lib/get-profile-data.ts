@@ -1,6 +1,6 @@
 import fetch from 'npm-registry-fetch';
 
-import { FetchConfig, ProfileData, pulseTillDone } from '@lerna-lite/core';
+import { FetchConfig, ProfileData, pulseTillDone } from '@qoopido/lerna.core';
 
 /**
  * Retrieve profile data of logged-in user.

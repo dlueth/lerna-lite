@@ -1,8 +1,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm](https://img.shields.io/npm/dy/@lerna-lite/changed?color=forest)](https://www.npmjs.com/package/@lerna-lite/changed)
-[![npm](https://img.shields.io/npm/v/@lerna-lite/changed.svg?logo=npm&logoColor=fff)](https://www.npmjs.com/package/@lerna-lite/changed)
+[![npm](https://img.shields.io/npm/dy/@qoopido/lerna.changed?color=forest)](https://www.npmjs.com/package/@qoopido/lerna.changed)
+[![npm](https://img.shields.io/npm/v/@qoopido/lerna.changed.svg?logo=npm&logoColor=fff)](https://www.npmjs.com/package/@qoopido/lerna.changed)
 
-# @lerna-lite/changed
+# @qoopido/lerna.changed
 
 ## (`lerna changed`) - Changed command [optional] 🕜
 
@@ -13,7 +13,7 @@ List local packages that have changed since the last tagged release
 ## Installation
 
 ```sh
-npm install @lerna-lite/changed -D -W
+npm install @qoopido/lerna.changed -D -W
 
 # then use it (see usage below)
 lerna changed

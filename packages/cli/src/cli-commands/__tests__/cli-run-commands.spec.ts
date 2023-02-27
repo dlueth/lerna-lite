@@ -1,4 +1,4 @@
-jest.mock('@lerna-lite/run', () => null);
+jest.mock('@qoopido/lerna.run', () => null);
 import cliRun from '../cli-run-commands';
 
 describe('RunCommand CLI options', () => {
@@ -8,7 +8,7 @@ describe('RunCommand CLI options', () => {
     await cliRun.handler(undefined as any);
 
     expect(consoleSpy).toHaveBeenCalledWith(
-      expect.stringContaining('"@lerna-lite/run" is optional and was not found.'),
+      expect.stringContaining('"@qoopido/lerna.run" is optional and was not found.'),
       expect.anything()
     );
   });

@@ -1,4 +1,4 @@
-import { WatchCommandOption } from '@lerna-lite/core';
+import { WatchCommandOption } from '@qoopido/lerna.core';
 
 import { filterOptions } from '../filter-options';
 
@@ -152,11 +152,11 @@ export default {
     try {
       // @ts-ignore
       // eslint-disable-next-line import/no-unresolved
-      const { WatchCommand } = await import('@lerna-lite/watch');
+      const { WatchCommand } = await import('@qoopido/lerna.watch');
       new WatchCommand(argv);
     } catch (err: unknown) {
       console.error(
-        `"@lerna-lite/watch" is optional and was not found. Please install it with "npm install @lerna-lite/watch -D -W".`,
+        `"@qoopido/lerna.watch" is optional and was not found. Please install it with "npm install @qoopido/lerna.watch -D -W".`,
         err
       );
     }

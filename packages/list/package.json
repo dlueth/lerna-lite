@@ -1,5 +1,5 @@
 {
-  "name": "@lerna-lite/list",
+  "name": "@qoopido/lerna.list",
   "description": "Lerna-Lite list commmand - List local packages",
   "version": "1.15.1",
   "main": "dist/index.js",
@@ -18,7 +18,7 @@
     "pack-tarball": "npm pack"
   },
   "license": "MIT",
-  "author": "Ghislain B.",
+  "author": "Dirk L.",
   "homepage": "https://github.com/lerna-lite/lerna-lite",
   "repository": {
     "type": "git",
@@ -33,9 +33,9 @@
     "npm": ">=8.0.0"
   },
   "dependencies": {
-    "@lerna-lite/core": "workspace:*",
-    "@lerna-lite/filter-packages": "workspace:*",
-    "@lerna-lite/listable": "workspace:*"
+    "@qoopido/lerna.core": "workspace:*",
+    "@qoopido/lerna.filter-packages": "workspace:*",
+    "@qoopido/lerna.listable": "workspace:*"
   },
   "devDependencies": {
     "rimraf": "^3.0.2",

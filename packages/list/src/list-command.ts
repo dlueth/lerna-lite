@@ -1,6 +1,6 @@
-import { Command, CommandType, ListCommandOption, logOutput, ProjectConfig } from '@lerna-lite/core';
-import { FilterOptions, getFilteredPackages } from '@lerna-lite/filter-packages';
-import { listable } from '@lerna-lite/listable';
+import { Command, CommandType, ListCommandOption, logOutput, ProjectConfig } from '@qoopido/lerna.core';
+import { FilterOptions, getFilteredPackages } from '@qoopido/lerna.filter-packages';
+import { listable } from '@qoopido/lerna.listable';
 
 export function factory(argv: ListCommandOption) {
   return new ListCommand(argv);

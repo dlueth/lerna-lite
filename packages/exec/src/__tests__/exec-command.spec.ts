@@ -1,6 +1,6 @@
 // mocked modules
-jest.mock('@lerna-lite/core', () => ({
-  ...(jest.requireActual('@lerna-lite/core') as any), // return the other real methods, below we'll mock only 2 of the methods
+jest.mock('@qoopido/lerna.core', () => ({
+  ...(jest.requireActual('@qoopido/lerna.core') as any), // return the other real methods, below we'll mock only 2 of the methods
   Command: jest.requireActual('../../../core/src/command').Command,
   conf: jest.requireActual('../../../core/src/command').conf,
   logOutput: jest.requireActual('../../../core/src/__mocks__/output').logOutput,
@@ -10,10 +10,10 @@ jest.mock('@lerna-lite/core', () => ({
   QueryGraph: jest.requireActual('../../../core/src/utils/query-graph').QueryGraph,
 }));
 
-jest.mock('@lerna-lite/profiler', () => jest.requireActual('../../../profiler/src/profiler'));
+jest.mock('@qoopido/lerna.profiler', () => jest.requireActual('../../../profiler/src/profiler'));
 
 // also point to the local exec command so that all mocks are properly used even by the command-runner
-jest.mock('@lerna-lite/exec', () => jest.requireActual('../exec-command'));
+jest.mock('@qoopido/lerna.exec', () => jest.requireActual('../exec-command'));
 
 import path from 'path';
 import fs from 'fs-extra';
@@ -21,10 +21,10 @@ import globby from 'globby';
 import yargParser from 'yargs-parser';
 
 // make sure to import the output mock
-import { ExecCommandOption, logOutput } from '@lerna-lite/core';
+import { ExecCommandOption, logOutput } from '@qoopido/lerna.core';
 
 // mocked modules
-import { spawn, spawnStreaming } from '@lerna-lite/core';
+import { spawn, spawnStreaming } from '@qoopido/lerna.core';
 
 // helpers
 import { commandRunner, initFixtureFactory } from '@lerna-test/helpers';

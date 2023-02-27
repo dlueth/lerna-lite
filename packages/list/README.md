@@ -1,8 +1,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm](https://img.shields.io/npm/dy/@lerna-lite/list?color=forest)](https://www.npmjs.com/package/@lerna-lite/list)
-[![npm](https://img.shields.io/npm/v/@lerna-lite/list.svg?logo=npm&logoColor=fff)](https://www.npmjs.com/package/@lerna-lite/list)
+[![npm](https://img.shields.io/npm/dy/@qoopido/lerna.list?color=forest)](https://www.npmjs.com/package/@qoopido/lerna.list)
+[![npm](https://img.shields.io/npm/v/@qoopido/lerna.list.svg?logo=npm&logoColor=fff)](https://www.npmjs.com/package/@qoopido/lerna.list)
 
-# @lerna-lite/list
+# @qoopido/lerna.list
 
 ## (`lerna list`) - List command [optional] 📖
 
@@ -13,7 +13,7 @@ List local packages
 ## Installation
 
 ```sh
-npm install @lerna-lite/list -D -W
+npm install @qoopido/lerna.list -D -W
 
 # then use it (see usage below)
 lerna ls

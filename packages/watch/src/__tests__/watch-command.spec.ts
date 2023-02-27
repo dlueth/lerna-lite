@@ -1,6 +1,6 @@
 // mocked modules
-jest.mock('@lerna-lite/core', () => ({
-  ...(jest.requireActual('@lerna-lite/core') as any), // return the other real methods, below we'll mock only 2 of the methods
+jest.mock('@qoopido/lerna.core', () => ({
+  ...(jest.requireActual('@qoopido/lerna.core') as any), // return the other real methods, below we'll mock only 2 of the methods
   Command: jest.requireActual('../../../core/src/command').Command,
   conf: jest.requireActual('../../../core/src/command').conf,
   spawn: jest.fn(() => Promise.resolve({ exitCode: 0 })),
@@ -39,7 +39,7 @@ const watchMock = jest.fn().mockImplementation(() => ({
 jest.mock('chokidar', () => ({ watch: watchMock }));
 
 // also point to the local watch command so that all mocks are properly used even by the command-runner
-jest.mock('@lerna-lite/watch', () => jest.requireActual('../watch-command'));
+jest.mock('@qoopido/lerna.watch', () => jest.requireActual('../watch-command'));
 
 // jest.useFakeTimers({ timerLimit: 100 });
 
@@ -48,10 +48,10 @@ import path from 'path';
 import yargParser from 'yargs-parser';
 
 // make sure to import the output mock
-import { WatchCommandOption } from '@lerna-lite/core';
+import { WatchCommandOption } from '@qoopido/lerna.core';
 
 // mocked modules
-import { spawn, spawnStreaming } from '@lerna-lite/core';
+import { spawn, spawnStreaming } from '@qoopido/lerna.core';
 
 // helpers
 import { commandRunner, initFixtureFactory } from '@lerna-test/helpers';

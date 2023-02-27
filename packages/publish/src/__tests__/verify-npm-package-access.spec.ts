@@ -1,7 +1,7 @@
 jest.mock('libnpmaccess');
 
 import access from 'libnpmaccess';
-import { FetchConfig, Project } from '@lerna-lite/core';
+import { FetchConfig, Project } from '@qoopido/lerna.core';
 import { loggingOutput } from '@lerna-test/helpers/logging-output';
 import { verifyNpmPackageAccess } from '../lib/verify-npm-package-access';
 import { initFixtureFactory } from '@lerna-test/helpers';

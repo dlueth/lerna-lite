@@ -1,5 +1,5 @@
 import log from 'npmlog';
-import { ExecOpts, execSync } from '@lerna-lite/core';
+import { ExecOpts, execSync } from '@qoopido/lerna.core';
 
 export function isAnythingCommitted(opts: ExecOpts, dryRun = false) {
   log.silly('isAnythingCommitted', '');

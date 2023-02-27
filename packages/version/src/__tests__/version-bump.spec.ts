@@ -7,8 +7,8 @@ jest.mock('../lib/is-anything-committed', () => jest.requireActual('../lib/__moc
 jest.mock('../lib/is-behind-upstream', () => jest.requireActual('../lib/__mocks__/is-behind-upstream'));
 jest.mock('../lib/remote-branch-exists', () => jest.requireActual('../lib/__mocks__/remote-branch-exists'));
 
-jest.mock('@lerna-lite/core', () => ({
-  ...(jest.requireActual('@lerna-lite/core') as any), // return the other real methods, below we'll mock only 2 of the methods
+jest.mock('@qoopido/lerna.core', () => ({
+  ...(jest.requireActual('@qoopido/lerna.core') as any), // return the other real methods, below we'll mock only 2 of the methods
   Command: jest.requireActual('../../../core/src/command').Command,
   conf: jest.requireActual('../../../core/src/command').conf,
   logOutput: jest.requireActual('../../../core/src/__mocks__/output').logOutput,
@@ -19,13 +19,13 @@ jest.mock('@lerna-lite/core', () => ({
 }));
 
 // also point to the local version command so that all mocks are properly used even by the command-runner
-jest.mock('@lerna-lite/version', () => jest.requireActual('../version-command'));
+jest.mock('@qoopido/lerna.version', () => jest.requireActual('../version-command'));
 
 import path from 'path';
 import yargParser from 'yargs-parser';
 
 // mocked modules
-import { promptSelectOne, VersionCommandOption } from '@lerna-lite/core';
+import { promptSelectOne, VersionCommandOption } from '@qoopido/lerna.core';
 
 // helpers
 import { commandRunner, initFixtureFactory } from '@lerna-test/helpers';

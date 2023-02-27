@@ -1,5 +1,5 @@
 {
-  "name": "@lerna-lite/watch",
+  "name": "@qoopido/lerna.watch",
   "description": "Lerna-Lite watch commmand - Runs a command whenever packages or their dependents change",
   "version": "1.15.2",
   "main": "dist/index.js",
@@ -18,7 +18,7 @@
     "pack-tarball": "npm pack"
   },
   "license": "MIT",
-  "author": "Ghislain B.",
+  "author": "Dirk L.",
   "homepage": "https://github.com/lerna-lite/lerna-lite",
   "repository": {
     "type": "git",
@@ -33,8 +33,8 @@
     "npm": ">=8.0.0"
   },
   "dependencies": {
-    "@lerna-lite/core": "workspace:*",
-    "@lerna-lite/filter-packages": "workspace:*",
+    "@qoopido/lerna.core": "workspace:*",
+    "@qoopido/lerna.filter-packages": "workspace:*",
     "chokidar": "^3.5.3",
     "path": "^0.12.7"
   },

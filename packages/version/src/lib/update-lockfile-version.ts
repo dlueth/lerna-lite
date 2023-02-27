@@ -5,7 +5,7 @@ import fs from 'fs';
 import os from 'os';
 import semver from 'semver';
 import writeJsonFile from 'write-json-file';
-import { exec, execSync, Package } from '@lerna-lite/core';
+import { exec, execSync, Package } from '@qoopido/lerna.core';
 
 /**
  * From a folder path provided, try to load a `package-lock.json` file if it exists.
@@ -104,11 +104,11 @@ export function updateNpmLockFileVersion2(obj: any, pkgName: string, newVersion:
         updateNpmLockFileVersion2(obj[k], pkgName, newVersion);
       } else {
         if (k === pkgName) {
-          // e.g.: "@lerna-lite/core": "^0.1.2",
+          // e.g.: "@qoopido/lerna.core": "^0.1.2",
           const [_, versionPrefix, _versionStr] = obj[k].match(/^([\^~])?(.*)$/) || [];
           obj[k] = `${versionPrefix}${newVersion}`;
         } else if (k === 'name' && obj[k] === pkgName && obj['version'] !== undefined) {
-          // e.g. "packages/version": { "name": "@lerna-lite/version", "version": "0.1.2" }
+          // e.g. "packages/version": { "name": "@qoopido/lerna.version", "version": "0.1.2" }
           if (obj['version'] !== undefined) {
             obj['version'] = newVersion;
           }

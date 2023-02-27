@@ -1,4 +1,4 @@
-import { ValidationError } from '@lerna-lite/core';
+import { ValidationError } from '@qoopido/lerna.core';
 import chalk from 'chalk';
 import log from 'npmlog';
 import newGithubReleaseUrl from 'new-github-release-url';

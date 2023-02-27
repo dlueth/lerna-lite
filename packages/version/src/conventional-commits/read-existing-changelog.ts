@@ -1,4 +1,4 @@
-import { Package } from '@lerna-lite/core';
+import { Package } from '@qoopido/lerna.core';
 import fs from 'fs-extra';
 import path from 'path';
 

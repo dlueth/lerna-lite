@@ -1,6 +1,6 @@
 {
   "name": "updates",
   "dependencies": {
-    "@lerna-lite/cli": "__OVERWRITTEN__"
+    "@qoopido/lerna.cli": "__OVERWRITTEN__"
   }
 }

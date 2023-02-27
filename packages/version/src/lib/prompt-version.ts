@@ -1,6 +1,6 @@
 import semver from 'semver';
 
-import { PackageGraphNode, promptSelectOne, promptTextInput } from '@lerna-lite/core';
+import { PackageGraphNode, promptSelectOne, promptTextInput } from '@qoopido/lerna.core';
 
 export function makePromptVersion(resolvePrereleaseId: (prereleaseId?: string) => string | undefined) {
   return (node: PackageGraphNode) => promptVersion(node.version, node.name, resolvePrereleaseId(node.prereleaseId));

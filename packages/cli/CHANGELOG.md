@@ -6,7 +6,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.15.1](https://github.com/lerna-lite/lerna-lite/compare/v1.15.0...v1.15.1) (2023-02-08)
 
-**Note:** Version bump only for package @lerna-lite/cli
+**Note:** Version bump only for package @qoopido/lerna.cli
 
 # [1.15.0](https://github.com/lerna-lite/lerna-lite/compare/v1.14.2...v1.15.0) (2023-02-04)
 
@@ -31,7 +31,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.14.1](https://github.com/lerna-lite/lerna-lite/compare/v1.14.0...v1.14.1) (2023-01-19)
 
-**Note:** Version bump only for package @lerna-lite/cli
+**Note:** Version bump only for package @qoopido/lerna.cli
 
 # [1.14.0](https://github.com/lerna-lite/lerna-lite/compare/v1.13.0...v1.14.0) (2023-01-18)
 
@@ -88,7 +88,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.11.1](https://github.com/lerna-lite/lerna-lite/compare/v1.11.0...v1.11.1) (2022-08-24)
 
-**Note:** Version bump only for package @lerna-lite/cli
+**Note:** Version bump only for package @qoopido/lerna.cli
 
 # [1.11.0](https://github.com/lerna-lite/lerna-lite/compare/v1.10.0...v1.11.0) (2022-08-19)
 
@@ -104,7 +104,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.9.1](https://github.com/lerna-lite/lerna-lite/compare/v1.9.0...v1.9.1) (2022-08-01)
 
-**Note:** Version bump only for package @lerna-lite/cli
+**Note:** Version bump only for package @qoopido/lerna.cli
 
 # [1.9.0](https://github.com/lerna-lite/lerna-lite/compare/v1.8.0...v1.9.0) (2022-07-28)
 
@@ -137,7 +137,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.5.1](https://github.com/lerna-lite/lerna-lite/compare/v1.5.0...v1.5.1) (2022-06-12)
 
-**Note:** Version bump only for package @lerna-lite/cli
+**Note:** Version bump only for package @qoopido/lerna.cli
 
 # [1.5.0](https://github.com/lerna-lite/lerna-lite/compare/v1.4.0...v1.5.0) (2022-06-08)
 
@@ -165,7 +165,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [1.2.0](https://github.com/lerna-lite/lerna-lite/compare/v1.1.1...v1.2.0) (2022-05-11)
 
-**Note:** Version bump only for package @lerna-lite/cli
+**Note:** Version bump only for package @qoopido/lerna.cli
 
 ## [1.1.1](https://github.com/lerna-lite/lerna-lite/compare/v1.1.0...v1.1.1) (2022-05-01)
 
@@ -191,15 +191,15 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.0.4](https://github.com/lerna-lite/lerna-lite/compare/v1.0.3...v1.0.4) (2022-03-24)
 
-**Note:** Version bump only for package @lerna-lite/cli
+**Note:** Version bump only for package @qoopido/lerna.cli
 
 ## [1.0.3](https://github.com/lerna-lite/lerna-lite/compare/v1.0.2...v1.0.3) (2022-03-19)
 
-**Note:** Version bump only for package @lerna-lite/cli
+**Note:** Version bump only for package @qoopido/lerna.cli
 
 ## [1.0.2](https://github.com/lerna-lite/lerna-lite/compare/v1.0.1...v1.0.2) (2022-03-17)
 
-**Note:** Version bump only for package @lerna-lite/cli
+**Note:** Version bump only for package @qoopido/lerna.cli
 
 ## [1.0.1](https://github.com/lerna-lite/lerna-lite/compare/v1.0.0...v1.0.1) (2022-03-15)
 
@@ -209,11 +209,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [1.0.0](https://github.com/lerna-lite/lerna-lite/compare/v0.3.7...v1.0.0) (2022-03-15)
 
-**Note:** Version bump only for package @lerna-lite/cli
+**Note:** Version bump only for package @qoopido/lerna.cli
 
 ## [0.3.7](https://github.com/lerna-lite/lerna-lite/compare/v0.3.5...v0.3.7) (2022-03-09)
 
-**Note:** Version bump only for package @lerna-lite/cli
+**Note:** Version bump only for package @qoopido/lerna.cli
 
 ## [0.3.6](https://github.com/lerna-lite/lerna-lite/compare/v0.3.4...v0.3.6) (2022-03-05)
 
@@ -229,7 +229,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [0.3.4](https://github.com/lerna-lite/lerna-lite/compare/v0.3.3...v0.3.4) (2022-03-05)
 
-**Note:** Version bump only for package @lerna-lite/cli
+**Note:** Version bump only for package @qoopido/lerna.cli
 
 ## [0.3.3](https://github.com/lerna-lite/lerna-lite/compare/v0.3.2...v0.3.3) (2022-02-27)
 
@@ -239,11 +239,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [0.3.2](https://github.com/lerna-lite/lerna-lite/compare/v0.3.1...v0.3.2) (2022-02-22)
 
-**Note:** Version bump only for package @lerna-lite/cli
+**Note:** Version bump only for package @qoopido/lerna.cli
 
 ## [0.3.1](https://github.com/lerna-lite/lerna-lite/compare/v0.3.0...v0.3.1) (2022-02-12)
 
-**Note:** Version bump only for package @lerna-lite/cli
+**Note:** Version bump only for package @qoopido/lerna.cli
 
 # [0.3.0](https://github.com/lerna-lite/lerna-lite/compare/v0.2.3...v0.3.0) (2022-02-12)
 

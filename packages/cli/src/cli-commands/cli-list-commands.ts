@@ -1,5 +1,5 @@
-import { ListCommandOption } from '@lerna-lite/core';
-import { listable } from '@lerna-lite/listable';
+import { ListCommandOption } from '@qoopido/lerna.core';
+import { listable } from '@qoopido/lerna.listable';
 
 import { filterOptions } from '../filter-options';
 
@@ -20,11 +20,11 @@ export default {
     try {
       // @ts-ignore
       // eslint-disable-next-line import/no-unresolved
-      const { ListCommand } = await import('@lerna-lite/list');
+      const { ListCommand } = await import('@qoopido/lerna.list');
       new ListCommand(argv);
     } catch (err: unknown) {
       console.error(
-        `"@lerna-lite/list" is optional and was not found. Please install it with "npm install @lerna-lite/list -D -W".`,
+        `"@qoopido/lerna.list" is optional and was not found. Please install it with "npm install @qoopido/lerna.list -D -W".`,
         err
       );
     }

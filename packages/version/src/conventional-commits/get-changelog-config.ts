@@ -1,4 +1,4 @@
-import { ValidationError } from '@lerna-lite/core';
+import { ValidationError } from '@qoopido/lerna.core';
 import log from 'npmlog';
 import npa from 'npm-package-arg';
 import pify from 'pify';

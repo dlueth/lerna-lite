@@ -10,8 +10,8 @@ jest.mock('../conventional-commits', () => jest.requireActual('../__mocks__/conv
 jest.mock('../git-clients/gitlab-client', () => jest.requireActual('../__mocks__/gitlab-client'));
 jest.mock('../git-clients/github-client', () => jest.requireActual('../__mocks__/github-client'));
 
-jest.mock('@lerna-lite/core', () => ({
-  ...(jest.requireActual('@lerna-lite/core') as any), // return the other real methods, below we'll mock only 2 of the methods
+jest.mock('@qoopido/lerna.core', () => ({
+  ...(jest.requireActual('@qoopido/lerna.core') as any), // return the other real methods, below we'll mock only 2 of the methods
   Command: jest.requireActual('../../../core/src/command').Command,
   conf: jest.requireActual('../../../core/src/command').conf,
   logOutput: jest.requireActual('../../../core/src/__mocks__/output').logOutput,
@@ -22,10 +22,10 @@ jest.mock('@lerna-lite/core', () => ({
 }));
 
 // also point to the local version command so that all mocks are properly used even by the command-runner
-jest.mock('@lerna-lite/version', () => jest.requireActual('../version-command'));
+jest.mock('@qoopido/lerna.version', () => jest.requireActual('../version-command'));
 
 // mocked modules
-import { logOutput, VersionCommandOption } from '@lerna-lite/core';
+import { logOutput, VersionCommandOption } from '@qoopido/lerna.core';
 import { recommendVersion } from '../conventional-commits';
 import { createGitHubClient, createGitLabClient } from '../git-clients';
 

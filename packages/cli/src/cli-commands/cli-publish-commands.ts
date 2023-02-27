@@ -1,6 +1,6 @@
 import log from 'npmlog';
-import { PublishCommand } from '@lerna-lite/publish';
-import { PublishCommandOption } from '@lerna-lite/core';
+import { PublishCommand } from '@qoopido/lerna.publish';
+import { PublishCommandOption } from '@qoopido/lerna.core';
 
 import cliVersionCmd, { addBumpPositional } from './cli-version-commands';
 

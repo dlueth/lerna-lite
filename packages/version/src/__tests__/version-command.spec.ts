@@ -8,8 +8,8 @@ jest.mock('../conventional-commits/get-commits-since-last-release', () =>
   jest.requireActual('../__mocks__/get-commits-since-last-release')
 );
 
-jest.mock('@lerna-lite/core', () => ({
-  ...(jest.requireActual('@lerna-lite/core') as any), // return the other real methods, below we'll mock only 2 of the methods
+jest.mock('@qoopido/lerna.core', () => ({
+  ...(jest.requireActual('@qoopido/lerna.core') as any), // return the other real methods, below we'll mock only 2 of the methods
   Command: jest.requireActual('../../../core/src/command').Command,
   conf: jest.requireActual('../../../core/src/command').conf,
   logOutput: jest.requireActual('../../../core/src/__mocks__/output').logOutput,
@@ -27,7 +27,7 @@ jest.mock('@lerna-lite/core', () => ({
 }));
 
 // also point to the local version command so that all mocks are properly used even by the command-runner
-jest.mock('@lerna-lite/version', () => jest.requireActual('../version-command'));
+jest.mock('@qoopido/lerna.version', () => jest.requireActual('../version-command'));
 
 import fs from 'fs-extra';
 import path from 'path';
@@ -36,10 +36,10 @@ import yaml from 'js-yaml';
 
 // mocked or stubbed modules
 import writePkg from 'write-pkg';
-import { promptConfirmation, promptSelectOne, VersionCommandOption } from '@lerna-lite/core';
-import { collectUpdates } from '@lerna-lite/core';
-import { logOutput } from '@lerna-lite/core';
-import { checkWorkingTree, throwIfUncommitted } from '@lerna-lite/core';
+import { promptConfirmation, promptSelectOne, VersionCommandOption } from '@qoopido/lerna.core';
+import { collectUpdates } from '@qoopido/lerna.core';
+import { logOutput } from '@qoopido/lerna.core';
+import { checkWorkingTree, throwIfUncommitted } from '@qoopido/lerna.core';
 import { getCommitsSinceLastRelease } from '../conventional-commits';
 import { gitPush as libPush } from '../lib/git-push';
 import { isAnythingCommitted } from '../lib/is-anything-committed';
@@ -90,7 +90,7 @@ async function loadYamlFile<T>(filePath: string) {
 }
 
 // certain tests need to use the real thing
-const collectUpdatesActual = jest.requireActual('@lerna-lite/core').collectUpdates;
+const collectUpdatesActual = jest.requireActual('@qoopido/lerna.core').collectUpdates;
 
 // assertion helpers
 const listDirty = (cwd) =>

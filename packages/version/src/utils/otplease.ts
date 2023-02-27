@@ -1,4 +1,4 @@
-import { promptTextInput } from '@lerna-lite/core';
+import { promptTextInput } from '@qoopido/lerna.core';
 
 import { OneTimePasswordCache } from '../models';
 

@@ -8,8 +8,8 @@ jest.mock('../cli-commands/cli-run-commands');
 jest.mock('../cli-commands/cli-version-commands');
 jest.mock('../cli-commands/cli-watch-commands');
 
-jest.mock('@lerna-lite/core', () => ({
-  ...(jest.requireActual('@lerna-lite/core') as any), // return the other real methods, below we'll mock only 2 of the methods
+jest.mock('@qoopido/lerna.core', () => ({
+  ...(jest.requireActual('@qoopido/lerna.core') as any), // return the other real methods, below we'll mock only 2 of the methods
   logOutput: jest.requireActual('../../../core/src/__mocks__/output').logOutput,
 }));
 

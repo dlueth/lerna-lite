@@ -1,7 +1,7 @@
 import log from 'npmlog';
 // import semver from 'semver';
-import { VersionCommand } from '@lerna-lite/version';
-import { VersionCommandOption } from '@lerna-lite/core';
+import { VersionCommand } from '@qoopido/lerna.version';
+import { VersionCommandOption } from '@qoopido/lerna.core';
 
 /**
  * @see https://github.com/yargs/yargs/blob/master/docs/advanced.md#providing-a-command-module

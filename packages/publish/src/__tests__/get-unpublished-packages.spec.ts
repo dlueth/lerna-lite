@@ -4,7 +4,7 @@ jest.mock('pacote');
 import pacote from 'pacote';
 
 // helpers
-import { Project, PackageGraph, FetchConfig } from '@lerna-lite/core';
+import { Project, PackageGraph, FetchConfig } from '@qoopido/lerna.core';
 import { initFixtureFactory } from '@lerna-test/helpers';
 const initFixture = initFixtureFactory(__dirname);
 

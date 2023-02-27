@@ -1,4 +1,4 @@
-import { EOL } from '@lerna-lite/core';
+import { EOL } from '@qoopido/lerna.core';
 
 export const BLANK_LINE = EOL + EOL;
 export const COMMIT_GUIDELINE = 'See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.';

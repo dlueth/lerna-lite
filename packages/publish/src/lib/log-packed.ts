@@ -4,7 +4,7 @@ import columnify from 'columnify';
 import log from 'npmlog';
 import hasUnicode from 'has-unicode';
 
-import { Package } from '@lerna-lite/core';
+import { Package } from '@qoopido/lerna.core';
 import { Tarball } from '../models';
 
 export function logPacked(pkg: Package & { packed: Tarball }, dryRun = false) {

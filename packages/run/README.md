@@ -1,8 +1,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm](https://img.shields.io/npm/dy/@lerna-lite/run?color=forest)](https://www.npmjs.com/package/@lerna-lite/run)
-[![npm](https://img.shields.io/npm/v/@lerna-lite/run.svg?logo=npm&logoColor=fff)](https://www.npmjs.com/package/@lerna-lite/run)
+[![npm](https://img.shields.io/npm/dy/@qoopido/lerna.run?color=forest)](https://www.npmjs.com/package/@qoopido/lerna.run)
+[![npm](https://img.shields.io/npm/v/@qoopido/lerna.run.svg?logo=npm&logoColor=fff)](https://www.npmjs.com/package/@qoopido/lerna.run)
 
-# @lerna-lite/run
+# @qoopido/lerna.run
 
 ## (`lerna run`) - Run command [optional] 🏃
 
@@ -15,7 +15,7 @@ This package was added mainly because NPM Workspaces don't yet support running N
 ## Installation
 
 ```sh
-npm install @lerna-lite/run -D -W
+npm install @qoopido/lerna.run -D -W
 
 # then use it (see usage below)
 lerna run <script>

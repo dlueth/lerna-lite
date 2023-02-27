@@ -1,5 +1,5 @@
-import { InitCommandOption } from '@lerna-lite/core';
-import { InitCommand } from '@lerna-lite/init';
+import { InitCommandOption } from '@qoopido/lerna.core';
+import { InitCommand } from '@qoopido/lerna.init';
 
 /**
  * @see https://github.com/yargs/yargs/blob/master/docs/advanced.md#providing-a-command-module

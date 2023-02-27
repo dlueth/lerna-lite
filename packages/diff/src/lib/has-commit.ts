@@ -1,5 +1,5 @@
 import log from 'npmlog';
-import { ExecOpts, execSync } from '@lerna-lite/core';
+import { ExecOpts, execSync } from '@qoopido/lerna.core';
 
 /**
  * @param {import("@lerna/child-process").ExecOpts} opts

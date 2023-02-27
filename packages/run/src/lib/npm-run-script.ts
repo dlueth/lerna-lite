@@ -1,5 +1,5 @@
 import log from 'npmlog';
-import { exec, Package, spawnStreaming } from '@lerna-lite/core';
+import { exec, Package, spawnStreaming } from '@qoopido/lerna.core';
 
 import { getNpmExecOpts } from './get-npm-exec-opts';
 import { RunScriptOption, ScriptStreamingOption } from '../models';

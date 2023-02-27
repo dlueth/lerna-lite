@@ -1,5 +1,5 @@
 {
-  "name": "@lerna-lite/profiler",
+  "name": "@qoopido/lerna.profiler",
   "description": "Lerna-Lite Profiler used by certain optional commands (Run/Exec)",
   "version": "1.15.1",
   "main": "dist/index.js",
@@ -18,7 +18,7 @@
     "pack-tarball": "npm pack"
   },
   "license": "MIT",
-  "author": "Ghislain B.",
+  "author": "Dirk L.",
   "homepage": "https://github.com/lerna-lite/lerna-lite",
   "repository": {
     "type": "git",
@@ -33,7 +33,7 @@
     "npm": ">=8.0.0"
   },
   "dependencies": {
-    "@lerna-lite/core": "workspace:*",
+    "@qoopido/lerna.core": "workspace:*",
     "fs-extra": "^11.1.0",
     "npmlog": "^7.0.1",
     "upath": "^2.0.1"

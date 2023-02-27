@@ -5,7 +5,7 @@ import {
   execSync,
   RemoteClientType,
   ValidationError,
-} from '@lerna-lite/core';
+} from '@qoopido/lerna.core';
 import log from 'npmlog';
 
 import { RemoteCommit } from '../models';

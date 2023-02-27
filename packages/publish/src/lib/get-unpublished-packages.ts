@@ -1,4 +1,4 @@
-import { FetchConfig, PackageGraph, PackageGraphNode } from '@lerna-lite/core';
+import { FetchConfig, PackageGraph, PackageGraphNode } from '@qoopido/lerna.core';
 import log from 'npmlog';
 import pMap from 'p-map';
 import pacote from 'pacote';

@@ -8,20 +8,20 @@ importers:
   .:
     specifiers:
       '@jest/types': ^29.4.3
-      '@lerna-lite/changed': workspace:*
-      '@lerna-lite/cli': workspace:*
-      '@lerna-lite/core': workspace:*
-      '@lerna-lite/diff': workspace:*
-      '@lerna-lite/exec': workspace:*
-      '@lerna-lite/filter-packages': workspace:*
-      '@lerna-lite/list': workspace:*
-      '@lerna-lite/listable': workspace:*
-      '@lerna-lite/profiler': workspace:*
-      '@lerna-lite/publish': workspace:*
-      '@lerna-lite/run': workspace:*
-      '@lerna-lite/version': workspace:*
-      '@lerna-lite/watch': workspace:*
       '@lerna-test/helpers': link:helpers
+      '@qoopido/lerna.changed': workspace:*
+      '@qoopido/lerna.cli': workspace:*
+      '@qoopido/lerna.core': workspace:*
+      '@qoopido/lerna.diff': workspace:*
+      '@qoopido/lerna.exec': workspace:*
+      '@qoopido/lerna.filter-packages': workspace:*
+      '@qoopido/lerna.list': workspace:*
+      '@qoopido/lerna.listable': workspace:*
+      '@qoopido/lerna.profiler': workspace:*
+      '@qoopido/lerna.publish': workspace:*
+      '@qoopido/lerna.run': workspace:*
+      '@qoopido/lerna.version': workspace:*
+      '@qoopido/lerna.watch': workspace:*
       '@types/jest': ^29.4.0
       '@types/node': ^18.14.1
       '@types/npmlog': ^4.1.4
@@ -64,20 +64,20 @@ importers:
       write-json-file: ^4.3.0
     devDependencies:
       '@jest/types': 29.4.3
-      '@lerna-lite/changed': link:packages/changed
-      '@lerna-lite/cli': link:packages/cli
-      '@lerna-lite/core': link:packages/core
-      '@lerna-lite/diff': link:packages/diff
-      '@lerna-lite/exec': link:packages/exec
-      '@lerna-lite/filter-packages': link:packages/filter-packages
-      '@lerna-lite/list': link:packages/list
-      '@lerna-lite/listable': link:packages/listable
-      '@lerna-lite/profiler': link:packages/profiler
-      '@lerna-lite/publish': link:packages/publish
-      '@lerna-lite/run': link:packages/run
-      '@lerna-lite/version': link:packages/version
-      '@lerna-lite/watch': link:packages/watch
       '@lerna-test/helpers': link:helpers
+      '@qoopido/lerna.changed': link:packages/changed
+      '@qoopido/lerna.cli': link:packages/cli
+      '@qoopido/lerna.core': link:packages/core
+      '@qoopido/lerna.diff': link:packages/diff
+      '@qoopido/lerna.exec': link:packages/exec
+      '@qoopido/lerna.filter-packages': link:packages/filter-packages
+      '@qoopido/lerna.list': link:packages/list
+      '@qoopido/lerna.listable': link:packages/listable
+      '@qoopido/lerna.profiler': link:packages/profiler
+      '@qoopido/lerna.publish': link:packages/publish
+      '@qoopido/lerna.run': link:packages/run
+      '@qoopido/lerna.version': link:packages/version
+      '@qoopido/lerna.watch': link:packages/watch
       '@types/jest': 29.4.0
       '@types/node': 18.14.1
       '@types/npmlog': 4.1.4
@@ -121,26 +121,26 @@ importers:
 
   packages/changed:
     specifiers:
-      '@lerna-lite/core': workspace:*
-      '@lerna-lite/list': workspace:*
-      '@lerna-lite/listable': workspace:*
+      '@qoopido/lerna.core': workspace:*
+      '@qoopido/lerna.list': workspace:*
+      '@qoopido/lerna.listable': workspace:*
       rimraf: ^3.0.2
       yargs-parser: ^21.1.1
     dependencies:
-      '@lerna-lite/core': link:../core
-      '@lerna-lite/list': link:../list
-      '@lerna-lite/listable': link:../listable
+      '@qoopido/lerna.core': link:../core
+      '@qoopido/lerna.list': link:../list
+      '@qoopido/lerna.listable': link:../listable
     devDependencies:
       rimraf: 3.0.2
       yargs-parser: 21.1.1
 
   packages/cli:
     specifiers:
-      '@lerna-lite/core': workspace:*
-      '@lerna-lite/init': workspace:*
-      '@lerna-lite/listable': workspace:*
-      '@lerna-lite/publish': workspace:*
-      '@lerna-lite/version': workspace:*
+      '@qoopido/lerna.core': workspace:*
+      '@qoopido/lerna.init': workspace:*
+      '@qoopido/lerna.listable': workspace:*
+      '@qoopido/lerna.publish': workspace:*
+      '@qoopido/lerna.version': workspace:*
       '@types/load-json-file': ^5.1.0
       dedent: ^0.7.0
       dotenv: ^16.0.3
@@ -152,11 +152,11 @@ importers:
       yargs: ^17.7.1
       yargs-parser: ^21.1.1
     dependencies:
-      '@lerna-lite/core': link:../core
-      '@lerna-lite/init': link:../init
-      '@lerna-lite/listable': link:../listable
-      '@lerna-lite/publish': link:../publish
-      '@lerna-lite/version': link:../version
+      '@qoopido/lerna.core': link:../core
+      '@qoopido/lerna.init': link:../init
+      '@qoopido/lerna.listable': link:../listable
+      '@qoopido/lerna.publish': link:../publish
+      '@qoopido/lerna.version': link:../version
       dedent: 0.7.0
       dotenv: 16.0.3
       import-local: 3.1.0
@@ -264,14 +264,14 @@ importers:
 
   packages/diff:
     specifiers:
-      '@lerna-lite/core': workspace:*
+      '@qoopido/lerna.core': workspace:*
       execa: ^5.1.1
       fs-extra: ^11.1.0
       npmlog: ^7.0.1
       rimraf: ^3.0.2
       yargs-parser: ^21.1.1
     dependencies:
-      '@lerna-lite/core': link:../core
+      '@qoopido/lerna.core': link:../core
     devDependencies:
       execa: 5.1.1
       fs-extra: 11.1.0
@@ -281,9 +281,9 @@ importers:
 
   packages/exec:
     specifiers:
-      '@lerna-lite/core': workspace:*
-      '@lerna-lite/filter-packages': workspace:*
-      '@lerna-lite/profiler': workspace:*
+      '@qoopido/lerna.core': workspace:*
+      '@qoopido/lerna.filter-packages': workspace:*
+      '@qoopido/lerna.profiler': workspace:*
       '@types/p-map': ^2.0.0
       chalk: ^4.1.2
       dotenv: ^16.0.3
@@ -295,9 +295,9 @@ importers:
       yargs: ^17.7.1
       yargs-parser: ^21.1.1
     dependencies:
-      '@lerna-lite/core': link:../core
-      '@lerna-lite/filter-packages': link:../filter-packages
-      '@lerna-lite/profiler': link:../profiler
+      '@qoopido/lerna.core': link:../core
+      '@qoopido/lerna.filter-packages': link:../filter-packages
+      '@qoopido/lerna.profiler': link:../profiler
       chalk: 4.1.2
       dotenv: 16.0.3
       npmlog: 7.0.1
@@ -312,7 +312,7 @@ importers:
 
   packages/filter-packages:
     specifiers:
-      '@lerna-lite/core': workspace:*
+      '@qoopido/lerna.core': workspace:*
       '@types/node': ^18.14.1
       '@types/p-map': ^2.0.0
       multimatch: ^5.0.0
@@ -321,7 +321,7 @@ importers:
       rimraf: ^3.0.2
       yargs: ^17.7.1
     dependencies:
-      '@lerna-lite/core': link:../core
+      '@qoopido/lerna.core': link:../core
       multimatch: 5.0.0
       npmlog: 7.0.1
     devDependencies:
@@ -333,7 +333,7 @@ importers:
 
   packages/init:
     specifiers:
-      '@lerna-lite/core': workspace:*
+      '@qoopido/lerna.core': workspace:*
       '@types/fs-extra': ^11.0.1
       '@types/p-map': ^2.0.0
       '@types/write-json-file': ^3.2.1
@@ -344,7 +344,7 @@ importers:
       write-json-file: ^4.3.0
       yargs-parser: ^21.1.1
     dependencies:
-      '@lerna-lite/core': link:../core
+      '@qoopido/lerna.core': link:../core
       fs-extra: 11.1.0
       p-map: 4.0.0
       path: 0.12.7
@@ -358,27 +358,27 @@ importers:
 
   packages/list:
     specifiers:
-      '@lerna-lite/core': workspace:*
-      '@lerna-lite/filter-packages': workspace:*
-      '@lerna-lite/listable': workspace:*
+      '@qoopido/lerna.core': workspace:*
+      '@qoopido/lerna.filter-packages': workspace:*
+      '@qoopido/lerna.listable': workspace:*
       rimraf: ^3.0.2
       yargs-parser: ^21.1.1
     dependencies:
-      '@lerna-lite/core': link:../core
-      '@lerna-lite/filter-packages': link:../filter-packages
-      '@lerna-lite/listable': link:../listable
+      '@qoopido/lerna.core': link:../core
+      '@qoopido/lerna.filter-packages': link:../filter-packages
+      '@qoopido/lerna.listable': link:../listable
     devDependencies:
       rimraf: 3.0.2
       yargs-parser: 21.1.1
 
   packages/listable:
     specifiers:
-      '@lerna-lite/core': workspace:*
+      '@qoopido/lerna.core': workspace:*
       chalk: ^4.1.2
       columnify: ^1.6.0
       rimraf: ^3.0.2
     dependencies:
-      '@lerna-lite/core': link:../core
+      '@qoopido/lerna.core': link:../core
       chalk: 4.1.2
       columnify: 1.6.0
     devDependencies:
@@ -386,7 +386,7 @@ importers:
 
   packages/profiler:
     specifiers:
-      '@lerna-lite/core': workspace:*
+      '@qoopido/lerna.core': workspace:*
       '@types/node': ^18.14.1
       '@types/p-map': ^2.0.0
       fs-extra: ^11.1.0
@@ -396,7 +396,7 @@ importers:
       upath: ^2.0.1
       yargs: ^17.7.1
     dependencies:
-      '@lerna-lite/core': link:../core
+      '@qoopido/lerna.core': link:../core
       fs-extra: 11.1.0
       npmlog: 7.0.1
       upath: 2.0.1
@@ -409,9 +409,9 @@ importers:
 
   packages/publish:
     specifiers:
-      '@lerna-lite/core': workspace:*
-      '@lerna-lite/version': workspace:*
       '@npmcli/arborist': ^6.2.3
+      '@qoopido/lerna.core': workspace:*
+      '@qoopido/lerna.version': workspace:*
       '@types/conventional-changelog-core': ^4.2.1
       '@types/conventional-recommended-bump': ^6.1.0
       '@types/execa': ^2.0.0
@@ -448,9 +448,9 @@ importers:
       yargs: ^17.7.1
       yargs-parser: ^21.1.1
     dependencies:
-      '@lerna-lite/core': link:../core
-      '@lerna-lite/version': link:../version
       '@npmcli/arborist': 6.2.3
+      '@qoopido/lerna.core': link:../core
+      '@qoopido/lerna.version': link:../version
       byte-size: 7.0.1
       chalk: 4.1.2
       columnify: 1.6.0
@@ -490,9 +490,9 @@ importers:
 
   packages/run:
     specifiers:
-      '@lerna-lite/core': workspace:*
-      '@lerna-lite/filter-packages': workspace:*
-      '@lerna-lite/profiler': workspace:*
+      '@qoopido/lerna.core': workspace:*
+      '@qoopido/lerna.filter-packages': workspace:*
+      '@qoopido/lerna.profiler': workspace:*
       '@types/p-map': ^2.0.0
       chalk: ^4.1.2
       fs-extra: ^11.1.0
@@ -505,9 +505,9 @@ importers:
       yargs: ^17.7.1
       yargs-parser: ^21.1.1
     dependencies:
-      '@lerna-lite/core': link:../core
-      '@lerna-lite/filter-packages': link:../filter-packages
-      '@lerna-lite/profiler': link:../profiler
+      '@qoopido/lerna.core': link:../core
+      '@qoopido/lerna.filter-packages': link:../filter-packages
+      '@qoopido/lerna.profiler': link:../profiler
       chalk: 4.1.2
       fs-extra: 11.1.0
       npmlog: 7.0.1
@@ -523,10 +523,10 @@ importers:
 
   packages/version:
     specifiers:
-      '@lerna-lite/core': workspace:*
       '@npm/types': ^1.0.2
       '@octokit/plugin-enterprise-rest': ^6.0.1
       '@octokit/rest': ^19.0.7
+      '@qoopido/lerna.core': workspace:*
       '@types/conventional-changelog-core': ^4.2.1
       '@types/conventional-changelog-writer': ^4.0.2
       '@types/conventional-commits-parser': ^3.0.3
@@ -579,9 +579,9 @@ importers:
       yargs: ^17.7.1
       yargs-parser: ^21.1.1
     dependencies:
-      '@lerna-lite/core': link:../core
       '@octokit/plugin-enterprise-rest': 6.0.1
       '@octokit/rest': 19.0.7
+      '@qoopido/lerna.core': link:../core
       chalk: 4.1.2
       conventional-changelog-angular: 5.0.13
       conventional-changelog-core: 4.2.4
@@ -638,16 +638,16 @@ importers:
 
   packages/watch:
     specifiers:
-      '@lerna-lite/core': workspace:*
-      '@lerna-lite/filter-packages': workspace:*
+      '@qoopido/lerna.core': workspace:*
+      '@qoopido/lerna.filter-packages': workspace:*
       chokidar: ^3.5.3
       mock-stdin: ^1.0.0
       path: ^0.12.7
       rimraf: ^3.0.2
       yargs-parser: ^21.1.1
     dependencies:
-      '@lerna-lite/core': link:../core
-      '@lerna-lite/filter-packages': link:../filter-packages
+      '@qoopido/lerna.core': link:../core
+      '@qoopido/lerna.filter-packages': link:../filter-packages
       chokidar: 3.5.3
       path: 0.12.7
     devDependencies:

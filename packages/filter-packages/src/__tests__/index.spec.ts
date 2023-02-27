@@ -1,5 +1,5 @@
 import 'jest-extended';
-import { ExecOpts } from '@lerna-lite/core';
+import { ExecOpts } from '@qoopido/lerna.core';
 import * as entry from '../index';
 
 describe('Testing common lib entry point', () => {

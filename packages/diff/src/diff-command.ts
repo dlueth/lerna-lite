@@ -6,7 +6,7 @@ import {
   ProjectConfig,
   spawn,
   ValidationError,
-} from '@lerna-lite/core';
+} from '@qoopido/lerna.core';
 
 import { getLastCommit } from './lib/get-last-commit';
 import { hasCommit } from './lib/has-commit';

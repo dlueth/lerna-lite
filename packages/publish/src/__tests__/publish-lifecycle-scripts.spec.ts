@@ -12,9 +12,9 @@ jest.mock('../../../version/dist/lib/remote-branch-exists', () =>
   jest.requireActual('../../../version/src/lib/__mocks__/remote-branch-exists')
 );
 
-// mocked modules of @lerna-lite/core
-jest.mock('@lerna-lite/core', () => ({
-  ...jest.requireActual('@lerna-lite/core'), // return the other real methods, below we'll mock only 2 of the methods
+// mocked modules of @qoopido/lerna.core
+jest.mock('@qoopido/lerna.core', () => ({
+  ...jest.requireActual('@qoopido/lerna.core'), // return the other real methods, below we'll mock only 2 of the methods
   Command: jest.requireActual('../../../core/src/command').Command,
   conf: jest.requireActual('../../../core/src/command').conf,
   collectUpdates: jest.requireActual('../../../core/src/__mocks__/collect-updates').collectUpdates,
@@ -29,7 +29,7 @@ jest.mock('@lerna-lite/core', () => ({
 }));
 
 // also point to the local publish command so that all mocks are properly used even by the command-runner
-jest.mock('@lerna-lite/publish', () => jest.requireActual('../publish-command'));
+jest.mock('@qoopido/lerna.publish', () => jest.requireActual('../publish-command'));
 
 // local modules _must_ be explicitly mocked
 jest.mock('../lib/get-packages-without-license', () =>
@@ -47,7 +47,7 @@ jest.mock('load-json-file', () => jest.requireActual('../../../version/src/lib/_
 // mocked modules
 import loadJsonFile from 'load-json-file';
 import { packDirectory } from '../lib/pack-directory';
-import { runLifecycle } from '@lerna-lite/core';
+import { runLifecycle } from '@qoopido/lerna.core';
 
 // helpers
 import { loggingOutput } from '@lerna-test/helpers/logging-output';

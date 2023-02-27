@@ -1,4 +1,4 @@
-jest.mock('@lerna-lite/list', () => null);
+jest.mock('@qoopido/lerna.list', () => null);
 import cliList from '../cli-list-commands';
 
 describe('ListCommand CLI options', () => {
@@ -8,7 +8,7 @@ describe('ListCommand CLI options', () => {
     await cliList.handler(undefined as any);
 
     expect(consoleSpy).toHaveBeenCalledWith(
-      expect.stringContaining('"@lerna-lite/list" is optional and was not found.'),
+      expect.stringContaining('"@qoopido/lerna.list" is optional and was not found.'),
       expect.anything()
     );
   });

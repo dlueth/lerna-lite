@@ -1,5 +1,5 @@
 import log from 'npmlog';
-import { RunCommandOption } from '@lerna-lite/core';
+import { RunCommandOption } from '@qoopido/lerna.core';
 
 import { filterOptions } from '../filter-options';
 
@@ -122,11 +122,11 @@ export default {
     try {
       // @ts-ignore
       // eslint-disable-next-line import/no-unresolved
-      const { RunCommand } = await import('@lerna-lite/run');
+      const { RunCommand } = await import('@qoopido/lerna.run');
       new RunCommand(argv);
     } catch (err: unknown) {
       console.error(
-        `"@lerna-lite/run" is optional and was not found. Please install it with "npm install @lerna-lite/run -D -W".`,
+        `"@qoopido/lerna.run" is optional and was not found. Please install it with "npm install @qoopido/lerna.run -D -W".`,
         err
       );
     }

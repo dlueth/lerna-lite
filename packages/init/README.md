@@ -1,8 +1,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm](https://img.shields.io/npm/dy/@lerna-lite/init?color=forest)](https://www.npmjs.com/package/@lerna-lite/init)
-[![npm](https://img.shields.io/npm/v/@lerna-lite/init.svg?logo=npm&logoColor=fff)](https://www.npmjs.com/package/@lerna-lite/init)
+[![npm](https://img.shields.io/npm/dy/@qoopido/lerna.init?color=forest)](https://www.npmjs.com/package/@qoopido/lerna.init)
+[![npm](https://img.shields.io/npm/v/@qoopido/lerna.init.svg?logo=npm&logoColor=fff)](https://www.npmjs.com/package/@qoopido/lerna.init)
 
-# @lerna-lite/init
+# @qoopido/lerna.init
 
 ## (`lerna init`) - Init command 🛠️
 
@@ -13,7 +13,7 @@ Create/initialize a new Lerna-Lite repo or upgrade an existing repo to the curre
 ## Installation
 
 ```sh
-npm install @lerna-lite/cli -D -W
+npm install @qoopido/lerna.cli -D -W
 
 # then use it (see usage below)
 lerna init
@@ -115,7 +115,7 @@ In summary, this flag is only useful for npm or yarn users which expect a `works
 {
   "name": "monorepo",
   "devDependencies": {
-    "@lerna-lite/cli": "^1.0.0"
+    "@qoopido/lerna.cli": "^1.0.0"
   },
   "workspaces": ["packages/*"]
 }

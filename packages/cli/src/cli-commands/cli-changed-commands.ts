@@ -1,5 +1,5 @@
-import { listable } from '@lerna-lite/listable';
-import { ChangedCommandOption, ListCommandOption } from '@lerna-lite/core';
+import { listable } from '@qoopido/lerna.listable';
+import { ChangedCommandOption, ListCommandOption } from '@qoopido/lerna.core';
 
 /**
  * @see https://github.com/yargs/yargs/blob/master/docs/advanced.md#providing-a-command-module
@@ -46,11 +46,11 @@ export default {
     try {
       // @ts-ignore
       // eslint-disable-next-line import/no-unresolved
-      const { ChangedCommand } = await import('@lerna-lite/changed');
+      const { ChangedCommand } = await import('@qoopido/lerna.changed');
       new ChangedCommand(argv);
     } catch (err: unknown) {
       console.error(
-        `"@lerna-lite/changed" is optional and was not found. Please install it with "npm install @lerna-lite/changed -D -W".`,
+        `"@qoopido/lerna.changed" is optional and was not found. Please install it with "npm install @qoopido/lerna.changed -D -W".`,
         err
       );
     }

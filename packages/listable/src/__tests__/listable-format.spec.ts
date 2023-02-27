@@ -1,5 +1,5 @@
-jest.mock('@lerna-lite/core', () => ({
-  ...(jest.requireActual('@lerna-lite/core') as any), // return the other real methods, below we'll mock only 2 of the methods
+jest.mock('@qoopido/lerna.core', () => ({
+  ...(jest.requireActual('@qoopido/lerna.core') as any), // return the other real methods, below we'll mock only 2 of the methods
   Command: jest.requireActual('../../../core/src/command').Command,
   conf: jest.requireActual('../../../core/src/command').conf,
   QueryGraph: jest.requireActual('../../../core/src/utils/query-graph').QueryGraph,
@@ -8,7 +8,7 @@ jest.mock('@lerna-lite/core', () => ({
 import chalk from 'chalk';
 import tempy from 'tempy';
 import Tacks from 'tacks';
-import { Project } from '@lerna-lite/core';
+import { Project } from '@qoopido/lerna.core';
 import { loggingOutput } from '@lerna-test/helpers/logging-output';
 
 import { listable } from '../index';

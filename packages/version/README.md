@@ -1,8 +1,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm](https://img.shields.io/npm/dy/@lerna-lite/version?color=forest)](https://www.npmjs.com/package/@lerna-lite/version)
-[![npm](https://img.shields.io/npm/v/@lerna-lite/version.svg?logo=npm&logoColor=fff&label=npm)](https://www.npmjs.com/package/@lerna-lite/version)
+[![npm](https://img.shields.io/npm/dy/@qoopido/lerna.version?color=forest)](https://www.npmjs.com/package/@qoopido/lerna.version)
+[![npm](https://img.shields.io/npm/v/@qoopido/lerna.version.svg?logo=npm&logoColor=fff&label=npm)](https://www.npmjs.com/package/@qoopido/lerna.version)
 
-# @lerna-lite/version
+# @qoopido/lerna.version
 
 ## (`lerna version`) - Version command 📑
 
@@ -14,7 +14,7 @@ Lerna-Lite Version command, bump version of packages changed since the last rele
 
 ```sh
 # simple install or install it globally with -g
-npm install @lerna-lite/cli -D -W
+npm install @qoopido/lerna.cli -D -W
 
 # then use it (see usage below)
 lerna version

@@ -1,5 +1,5 @@
 {
-  "name": "@lerna-lite/diff",
+  "name": "@qoopido/lerna.diff",
   "description": "Lerna-Lite diff commmand - Diff all packages or a single package since the last release",
   "version": "1.15.1",
   "main": "dist/index.js",
@@ -18,7 +18,7 @@
     "pack-tarball": "npm pack"
   },
   "license": "MIT",
-  "author": "Ghislain B.",
+  "author": "Dirk L.",
   "homepage": "https://github.com/lerna-lite/lerna-lite",
   "repository": {
     "type": "git",
@@ -33,7 +33,7 @@
     "npm": ">=8.0.0"
   },
   "dependencies": {
-    "@lerna-lite/core": "workspace:*"
+    "@qoopido/lerna.core": "workspace:*"
   },
   "devDependencies": {
     "execa": "^5.1.1",

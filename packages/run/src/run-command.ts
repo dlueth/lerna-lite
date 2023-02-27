@@ -7,9 +7,9 @@ import {
   RunCommandOption,
   runTopologically,
   ValidationError,
-} from '@lerna-lite/core';
-import { FilterOptions, getFilteredPackages } from '@lerna-lite/filter-packages';
-import { generateProfileOutputPath, Profiler } from '@lerna-lite/profiler';
+} from '@qoopido/lerna.core';
+import { FilterOptions, getFilteredPackages } from '@qoopido/lerna.filter-packages';
+import { generateProfileOutputPath, Profiler } from '@qoopido/lerna.profiler';
 import chalk from 'chalk';
 import { existsSync } from 'fs-extra';
 import pMap from 'p-map';

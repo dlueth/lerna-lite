@@ -9,7 +9,7 @@ import pPipe from 'p-pipe';
 import semver from 'semver';
 import tempDir from 'temp-dir';
 
-import { getOneTimePassword, OneTimePasswordCache, VersionCommand } from '@lerna-lite/version';
+import { getOneTimePassword, OneTimePasswordCache, VersionCommand } from '@qoopido/lerna.version';
 import {
   collectUpdates,
   Command,
@@ -32,7 +32,7 @@ import {
   throwIfUncommitted,
   UpdateCollectorOptions,
   ValidationError,
-} from '@lerna-lite/core';
+} from '@qoopido/lerna.core';
 
 import { getCurrentTags } from './lib/get-current-tags';
 import { getTaggedPackages } from './lib/get-tagged-packages';

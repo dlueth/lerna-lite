@@ -1,6 +1,6 @@
 import log from 'npmlog';
 import npa from 'npm-package-arg';
-import { exec, ExecOpts } from '@lerna-lite/core';
+import { exec, ExecOpts } from '@qoopido/lerna.core';
 
 /**
  * Retrieve a list of git tags pointing to the current HEAD that match the provided pattern.

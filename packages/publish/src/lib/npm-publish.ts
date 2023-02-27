@@ -1,5 +1,5 @@
-import { LifecycleConfig, Package, RawManifest, runLifecycle } from '@lerna-lite/core';
-import { OneTimePasswordCache, otplease } from '@lerna-lite/version';
+import { LifecycleConfig, Package, RawManifest, runLifecycle } from '@qoopido/lerna.core';
+import { OneTimePasswordCache, otplease } from '@qoopido/lerna.version';
 import fs from 'fs-extra';
 import log from 'npmlog';
 import npa from 'npm-package-arg';

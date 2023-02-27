@@ -1,4 +1,4 @@
-import { Package, ValidationError } from '@lerna-lite/core';
+import { Package, ValidationError } from '@qoopido/lerna.core';
 import { loggingOutput } from '@lerna-test/helpers/logging-output';
 import lernaCLI from '../lerna-cli';
 import { initFixtureFactory } from '@lerna-test/helpers';

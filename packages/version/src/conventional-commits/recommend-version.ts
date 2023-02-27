@@ -1,4 +1,4 @@
-import { Package, PackageGraphNode } from '@lerna-lite/core';
+import { Package, PackageGraphNode } from '@qoopido/lerna.core';
 import conventionalRecommendedBump from 'conventional-recommended-bump';
 import conventionalChangelogCore from 'conventional-changelog-core';
 import log from 'npmlog';

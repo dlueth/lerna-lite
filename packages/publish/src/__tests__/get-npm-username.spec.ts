@@ -3,7 +3,7 @@ jest.mock('npm-registry-fetch');
 import fetch from 'npm-registry-fetch';
 import { loggingOutput } from '@lerna-test/helpers/logging-output';
 import { getNpmUsername } from '../lib/get-npm-username';
-import { FetchConfig } from '@lerna-lite/core';
+import { FetchConfig } from '@qoopido/lerna.core';
 
 (fetch.json as jest.Mock).mockImplementation(() => Promise.resolve({ username: 'lerna-test' }));
 

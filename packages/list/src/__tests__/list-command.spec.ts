@@ -1,5 +1,5 @@
-jest.mock('@lerna-lite/core', () => ({
-  ...(jest.requireActual('@lerna-lite/core') as any), // return the other real methods, below we'll mock only 2 of the methods
+jest.mock('@qoopido/lerna.core', () => ({
+  ...(jest.requireActual('@qoopido/lerna.core') as any), // return the other real methods, below we'll mock only 2 of the methods
   Command: jest.requireActual('../../../core/src/command').Command,
   conf: jest.requireActual('../../../core/src/command').conf,
   logOutput: jest.requireActual('../../../core/src/__mocks__/output').logOutput,
@@ -13,7 +13,7 @@ jest.mock('@lerna-lite/core', () => ({
 }));
 
 // mocked modules
-import { collectUpdates, ListCommandOption, logOutput } from '@lerna-lite/core';
+import { collectUpdates, ListCommandOption, logOutput } from '@qoopido/lerna.core';
 
 // helpers
 import { commandRunner, initFixtureFactory } from '@lerna-test/helpers';

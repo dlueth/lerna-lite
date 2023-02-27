@@ -1,14 +1,14 @@
 jest.mock('../lib/npm-run-script');
 
-jest.mock('@lerna-lite/core', () => ({
-  ...(jest.requireActual('@lerna-lite/core') as any), // return the other real methods, below we'll mock only 2 of the methods
+jest.mock('@qoopido/lerna.core', () => ({
+  ...(jest.requireActual('@qoopido/lerna.core') as any), // return the other real methods, below we'll mock only 2 of the methods
   logOutput: jest.requireActual('../../../core/src/__mocks__/output').logOutput,
   runTopologically: jest.requireActual('../../../core/src/utils/run-topologically').runTopologically,
   QueryGraph: jest.requireActual('../../../core/src/utils/query-graph').QueryGraph,
 }));
 
 // also point to the local run command so that all mocks are properly used even by the command-runner
-jest.mock('@lerna-lite/run', () => jest.requireActual('../run-command'));
+jest.mock('@qoopido/lerna.run', () => jest.requireActual('../run-command'));
 
 // mocked modules
 import { npmRunScript, npmRunScriptStreaming } from '../lib/npm-run-script';

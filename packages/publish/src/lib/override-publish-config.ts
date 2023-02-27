@@ -1,4 +1,4 @@
-import { isEmpty, JsonValue, RawManifest } from '@lerna-lite/core';
+import { isEmpty, JsonValue, RawManifest } from '@qoopido/lerna.core';
 
 // manifest fields that may make sense to overwrite
 const PUBLISH_CONFIG_WHITELIST = new Set([

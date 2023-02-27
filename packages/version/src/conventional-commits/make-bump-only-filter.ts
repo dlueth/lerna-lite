@@ -1,4 +1,4 @@
-import { Package } from '@lerna-lite/core';
+import { Package } from '@qoopido/lerna.core';
 
 import { BLANK_LINE } from './constants';
 

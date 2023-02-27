@@ -1,5 +1,5 @@
 {
-  "name": "@lerna-lite/changed",
+  "name": "@qoopido/lerna.changed",
   "description": "Lerna-Lite changed commmand - List local packages that have changed since the last tagged release",
   "version": "1.15.1",
   "main": "dist/index.js",
@@ -18,7 +18,7 @@
     "pack-tarball": "npm pack"
   },
   "license": "MIT",
-  "author": "Ghislain B.",
+  "author": "Dirk L.",
   "homepage": "https://github.com/lerna-lite/lerna-lite",
   "repository": {
     "type": "git",
@@ -33,9 +33,9 @@
     "npm": ">=8.0.0"
   },
   "dependencies": {
-    "@lerna-lite/core": "workspace:*",
-    "@lerna-lite/list": "workspace:*",
-    "@lerna-lite/listable": "workspace:*"
+    "@qoopido/lerna.core": "workspace:*",
+    "@qoopido/lerna.list": "workspace:*",
+    "@qoopido/lerna.listable": "workspace:*"
   },
   "devDependencies": {
     "rimraf": "^3.0.2",

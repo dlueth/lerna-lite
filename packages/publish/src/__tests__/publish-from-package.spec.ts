@@ -11,8 +11,8 @@ jest.mock('../../../version/src/lib/remote-branch-exists', () =>
 );
 
 // mocked modules, mock only certain methods from core
-jest.mock('@lerna-lite/core', () => ({
-  ...jest.requireActual('@lerna-lite/core'), // return the other real methods, below we'll mock only 2 of the methods
+jest.mock('@qoopido/lerna.core', () => ({
+  ...jest.requireActual('@qoopido/lerna.core'), // return the other real methods, below we'll mock only 2 of the methods
   Command: jest.requireActual('../../../core/src/command').Command,
   conf: jest.requireActual('../../../core/src/command').conf,
   collectUpdates: jest.requireActual('../../../core/src/__mocks__/collect-updates').collectUpdates,
@@ -43,7 +43,7 @@ import yargParser from 'yargs-parser';
 import writePkg from 'write-pkg';
 import { npmPublish } from '../lib/npm-publish';
 import { npmPublish as npmPublishMock } from '../lib/__mocks__/npm-publish';
-import { logOutput, promptConfirmation, PublishCommandOption, throwIfUncommitted } from '@lerna-lite/core';
+import { logOutput, promptConfirmation, PublishCommandOption, throwIfUncommitted } from '@qoopido/lerna.core';
 import { getUnpublishedPackages } from '../lib/get-unpublished-packages';
 
 // helpers

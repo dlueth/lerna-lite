@@ -1,12 +1,12 @@
 // mocked modules
-// mocked modules of @lerna-lite/core
-jest.mock('@lerna-lite/core', () => ({
-  ...jest.requireActual('@lerna-lite/core'), // return the other real methods, below we'll mock only 2 of the methods
+// mocked modules of @qoopido/lerna.core
+jest.mock('@qoopido/lerna.core', () => ({
+  ...jest.requireActual('@qoopido/lerna.core'), // return the other real methods, below we'll mock only 2 of the methods
   promptTextInput: jest.requireActual('../../../../core/src/__mocks__/prompt').promptTextInput,
 }));
 
 // file under test
-import { promptTextInput } from '@lerna-lite/core';
+import { promptTextInput } from '@qoopido/lerna.core';
 import { otplease, getOneTimePassword } from '../otplease';
 
 // global mock setup

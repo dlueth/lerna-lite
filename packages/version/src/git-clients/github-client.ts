@@ -1,4 +1,4 @@
-import { execSync } from '@lerna-lite/core';
+import { execSync } from '@qoopido/lerna.core';
 import { Octokit } from '@octokit/rest';
 import { SyncOptions } from 'execa';
 import parseGitUrl from 'git-url-parse';

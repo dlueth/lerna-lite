@@ -1,4 +1,4 @@
-import { OneTimePasswordCache, otplease } from '@lerna-lite/version';
+import { OneTimePasswordCache, otplease } from '@qoopido/lerna.version';
 import log from 'npmlog';
 import npa from 'npm-package-arg';
 import fetch from 'npm-registry-fetch';

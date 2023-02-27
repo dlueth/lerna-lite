@@ -1,17 +1,17 @@
-jest.mock('@lerna-lite/core');
+jest.mock('@qoopido/lerna.core');
 jest.mock('../get-github-commits');
 
 const execSyncMock = jest.fn();
 const describeRefSyncMock = jest.fn();
-jest.mock('@lerna-lite/core', () => ({
-  ...(jest.requireActual('@lerna-lite/core') as any), // return the other real methods, below we'll mock only 2 of the methods
+jest.mock('@qoopido/lerna.core', () => ({
+  ...(jest.requireActual('@qoopido/lerna.core') as any), // return the other real methods, below we'll mock only 2 of the methods
   execSync: execSyncMock,
   describeRefSync: describeRefSyncMock,
 }));
 
 import { getGithubCommits } from '../get-github-commits';
 import { getCommitsSinceLastRelease, getOldestCommitSinceLastTag } from '../get-commits-since-last-release';
-import { describeRefSync, execSync } from '@lerna-lite/core';
+import { describeRefSync, execSync } from '@qoopido/lerna.core';
 
 const execOpts = { cwd: '/test' };
 const tagStub = {

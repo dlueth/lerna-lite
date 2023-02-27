@@ -1,4 +1,4 @@
-import { Package, QueryGraph } from '@lerna-lite/core';
+import { Package, QueryGraph } from '@qoopido/lerna.core';
 import chalk from 'chalk';
 import columnify from 'columnify';
 import path from 'path';

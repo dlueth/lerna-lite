@@ -1,4 +1,4 @@
-import { FetchConfig } from '@lerna-lite/core';
+import { FetchConfig } from '@qoopido/lerna.core';
 import log from 'npmlog';
 
 /**

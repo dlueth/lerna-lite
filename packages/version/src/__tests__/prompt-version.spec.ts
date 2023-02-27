@@ -1,13 +1,13 @@
 import semver from 'semver';
 
-// mocked modules of @lerna-lite/core
-jest.mock('@lerna-lite/core', () => ({
-  ...(jest.requireActual('@lerna-lite/core') as any), // return the other real methods, below we'll mock only 2 of the methods
+// mocked modules of @qoopido/lerna.core
+jest.mock('@qoopido/lerna.core', () => ({
+  ...(jest.requireActual('@qoopido/lerna.core') as any), // return the other real methods, below we'll mock only 2 of the methods
   promptSelectOne: jest.requireActual('../../../core/src/__mocks__/prompt').promptSelectOne,
   promptTextInput: jest.requireActual('../../../core/src/__mocks__/prompt').promptTextInput,
 }));
 
-import { promptSelectOne, promptTextInput, prereleaseIdFromVersion, PackageGraphNode } from '@lerna-lite/core';
+import { promptSelectOne, promptTextInput, prereleaseIdFromVersion, PackageGraphNode } from '@qoopido/lerna.core';
 import { makePromptVersion } from '../lib/prompt-version';
 
 const resolvePrereleaseId = jest.fn(() => 'alpha');

@@ -1,5 +1,5 @@
 {
-  "name": "@lerna-lite/listable",
+  "name": "@qoopido/lerna.listable",
   "description": "Lerna-Lite listable utils",
   "version": "1.15.1",
   "main": "dist/index.js",
@@ -18,7 +18,7 @@
     "pack-tarball": "npm pack"
   },
   "license": "MIT",
-  "author": "Ghislain B.",
+  "author": "Dirk L.",
   "homepage": "https://github.com/lerna-lite/lerna-lite",
   "repository": {
     "type": "git",
@@ -33,7 +33,7 @@
     "npm": ">=8.0.0"
   },
   "dependencies": {
-    "@lerna-lite/core": "workspace:*",
+    "@qoopido/lerna.core": "workspace:*",
     "chalk": "^4.1.2",
     "columnify": "^1.6.0"
   },

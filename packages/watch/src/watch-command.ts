@@ -7,8 +7,8 @@ import {
   spawnStreaming,
   ValidationError,
   WatchCommandOption,
-} from '@lerna-lite/core';
-import { FilterOptions, getFilteredPackages } from '@lerna-lite/filter-packages';
+} from '@qoopido/lerna.core';
+import { FilterOptions, getFilteredPackages } from '@qoopido/lerna.filter-packages';
 import chokidar from 'chokidar';
 import path from 'path';
 
@@ -136,7 +136,7 @@ export class WatchCommand extends Command<WatchCommandOption & FilterOptions> {
   protected changeEventListener(filepath: string) {
     const pkg = this._filteredPackages.find((p) => filepath.includes(p.location));
     if (pkg) {
-      // changes structure sample: { '@lerna-lite/watch': { pkg: Package, changeFiles: ['path1', 'path2'] }
+      // changes structure sample: { '@qoopido/lerna.watch': { pkg: Package, changeFiles: ['path1', 'path2'] }
       if (!this._changes[pkg.name] || !this._changes[pkg.name].changeFiles) {
         this._changes[pkg.name] = { pkg, changeFiles: new Set<string>(), timestamp: Date.now() }; // use Set to avoid duplicate entries
       }

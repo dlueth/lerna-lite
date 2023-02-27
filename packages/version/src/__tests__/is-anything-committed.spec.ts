@@ -1,12 +1,12 @@
 import execa from 'execa';
-import { execSync } from '@lerna-lite/core';
+import { execSync } from '@qoopido/lerna.core';
 import { isAnythingCommitted } from '../lib/is-anything-committed';
 
 import { initFixtureFactory } from '@lerna-test/helpers';
 const initFixture = initFixtureFactory(__dirname);
 
-jest.mock('@lerna-lite/core', () => {
-  const { execSync } = jest.requireActual('@lerna-lite/core');
+jest.mock('@qoopido/lerna.core', () => {
+  const { execSync } = jest.requireActual('@qoopido/lerna.core');
   return {
     __esModule: true,
     execSync: jest.fn(execSync),

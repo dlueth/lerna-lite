@@ -1,5 +1,5 @@
 import log from 'npmlog';
-import { ExecCommandOption } from '@lerna-lite/core';
+import { ExecCommandOption } from '@qoopido/lerna.core';
 
 import { filterOptions } from '../filter-options';
 
@@ -101,11 +101,11 @@ export default {
     try {
       // @ts-ignore
       // eslint-disable-next-line import/no-unresolved
-      const { ExecCommand } = await import('@lerna-lite/exec');
+      const { ExecCommand } = await import('@qoopido/lerna.exec');
       new ExecCommand(argv);
     } catch (err: unknown) {
       console.error(
-        `"@lerna-lite/exec" is optional and was not found. Please install it with "npm install @lerna-lite/exec -D -W".`,
+        `"@qoopido/lerna.exec" is optional and was not found. Please install it with "npm install @qoopido/lerna.exec -D -W".`,
         err
       );
     }

@@ -1,4 +1,4 @@
-import { Project } from '@lerna-lite/core';
+import { Project } from '@qoopido/lerna.core';
 import { getPackagesWithoutLicense } from '../lib/get-packages-without-license';
 import { initFixtureFactory } from '@lerna-test/helpers';
 const initFixture = initFixtureFactory(__dirname);

@@ -2,7 +2,7 @@ import log from 'npmlog';
 import path from 'path';
 import slash from 'slash';
 
-import { exec, ExecOpts } from '@lerna-lite/core';
+import { exec, ExecOpts } from '@qoopido/lerna.core';
 
 /**
  * @param {string[]} changedFiles

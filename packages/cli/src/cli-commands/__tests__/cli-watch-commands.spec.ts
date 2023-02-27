@@ -1,4 +1,4 @@
-jest.mock('@lerna-lite/watch', () => null);
+jest.mock('@qoopido/lerna.watch', () => null);
 import cliwatch from '../cli-watch-commands';
 
 describe('Watch Command CLI options', () => {
@@ -8,7 +8,7 @@ describe('Watch Command CLI options', () => {
     await cliwatch.handler(undefined as any);
 
     expect(consoleSpy).toHaveBeenCalledWith(
-      expect.stringContaining('"@lerna-lite/watch" is optional and was not found.'),
+      expect.stringContaining('"@qoopido/lerna.watch" is optional and was not found.'),
       expect.anything()
     );
   });

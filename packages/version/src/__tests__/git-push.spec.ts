@@ -8,9 +8,9 @@ async function listRemoteTags(cwd) {
   return execa('git', ['ls-remote', '--tags', '--refs', '--quiet'], { cwd }).then((result) => result.stdout);
 }
 
-import { exec } from '@lerna-lite/core';
-jest.mock('@lerna-lite/core', () => {
-  const { exec } = jest.requireActual('@lerna-lite/core');
+import { exec } from '@qoopido/lerna.core';
+jest.mock('@qoopido/lerna.core', () => {
+  const { exec } = jest.requireActual('@qoopido/lerna.core');
   return {
     __esModule: true,
     exec: jest.fn(exec),

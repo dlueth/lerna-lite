@@ -1,6 +1,6 @@
 import fs from 'fs-extra';
 import path from 'path';
-import { Project } from '@lerna-lite/core';
+import { Project } from '@qoopido/lerna.core';
 import { initFixtureFactory } from '@lerna-test/helpers';
 const initFixture = initFixtureFactory(__dirname);
 import { createTempLicenses } from '../lib/create-temp-licenses';

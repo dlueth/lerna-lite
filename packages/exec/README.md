@@ -1,8 +1,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm](https://img.shields.io/npm/dy/@lerna-lite/exec?color=forest)](https://www.npmjs.com/package/@lerna-lite/exec)
-[![npm](https://img.shields.io/npm/v/@lerna-lite/exec.svg?logo=npm&logoColor=fff&label=npm)](https://www.npmjs.com/package/@lerna-lite/exec)
+[![npm](https://img.shields.io/npm/dy/@qoopido/lerna.exec?color=forest)](https://www.npmjs.com/package/@qoopido/lerna.exec)
+[![npm](https://img.shields.io/npm/v/@qoopido/lerna.exec.svg?logo=npm&logoColor=fff&label=npm)](https://www.npmjs.com/package/@qoopido/lerna.exec)
 
-# @lerna-lite/exec
+# @qoopido/lerna.exec
 
 ## (`lerna exec`) - Exec command [optional] 👷
 
@@ -15,7 +15,7 @@ This package was added mainly because NPM Workspaces don't yet support executing
 ## Installation
 
 ```sh
-npm install @lerna-lite/exec -D -W
+npm install @qoopido/lerna.exec -D -W
 
 # then use it (see usage below)
 lerna exec <command>

@@ -125,7 +125,7 @@ describe('Init Command', () => {
       });
       expect(pkgJson).toMatchObject({
         devDependencies: {
-          '@lerna-lite/cli': `^${lernaVersion}`,
+          '@qoopido/lerna.cli': `^${lernaVersion}`,
         },
       });
       expect(packagesDirExists).toBe(true);
@@ -148,7 +148,7 @@ describe('Init Command', () => {
 
         expect(await fs.readJSON(path.join(testDir, 'package.json'))).toMatchObject({
           devDependencies: {
-            '@lerna-lite/cli': lernaVersion,
+            '@qoopido/lerna.cli': lernaVersion,
           },
         });
       });
@@ -159,7 +159,7 @@ describe('Init Command', () => {
         await lernaInit(testDir)('--exact');
 
         expect(await fs.readJSON(path.join(testDir, 'lerna.json'))).toMatchObject({
-          $schema: 'node_modules/@lerna-lite/cli/schemas/lerna-schema.json',
+          $schema: 'node_modules/@qoopido/lerna.cli/schemas/lerna-schema.json',
           command: {
             init: {
               exact: true,
@@ -176,8 +176,8 @@ describe('Init Command', () => {
         const pkgJsonPath = path.join(testDir, 'package.json');
 
         await fs.outputJSON(lernaJsonPath, {
-          '@lerna-lite/cli': '0.1.100',
-          $schema: 'node_modules/@lerna-lite/cli/schemas/lerna-schema.json',
+          '@qoopido/lerna.cli': '0.1.100',
+          $schema: 'node_modules/@qoopido/lerna.cli/schemas/lerna-schema.json',
           command: {
             bootstrap: {
               hoist: true,
@@ -187,7 +187,7 @@ describe('Init Command', () => {
         });
         await fs.outputJSON(pkgJsonPath, {
           devDependencies: {
-            '@lerna-lite/cli': lernaVersion,
+            '@qoopido/lerna.cli': lernaVersion,
           },
           workspaces: ['packages/*'],
         });
@@ -195,7 +195,7 @@ describe('Init Command', () => {
         await lernaInit(testDir)('--use-workspaces');
 
         expect(await fs.readJSON(lernaJsonPath)).toEqual({
-          $schema: 'node_modules/@lerna-lite/cli/schemas/lerna-schema.json',
+          $schema: 'node_modules/@qoopido/lerna.cli/schemas/lerna-schema.json',
           command: {
             bootstrap: {
               hoist: true,
@@ -227,7 +227,7 @@ describe('Init Command', () => {
       });
       expect(pkgJson).toMatchObject({
         devDependencies: {
-          '@lerna-lite/cli': `^${lernaVersion}`,
+          '@qoopido/lerna.cli': `^${lernaVersion}`,
         },
       });
       expect(packagesDirExists).toBe(true);
@@ -251,7 +251,7 @@ describe('Init Command', () => {
       expect(await fs.readJSON(pkgJsonPath)).toMatchObject({
         devDependencies: {
           alpha: 'first',
-          '@lerna-lite/cli': `^${lernaVersion}`,
+          '@qoopido/lerna.cli': `^${lernaVersion}`,
           omega: 'last',
         },
       });
@@ -267,7 +267,7 @@ describe('Init Command', () => {
           omega: 'last',
         },
         devDependencies: {
-          '@lerna-lite/cli': '0.1.100',
+          '@qoopido/lerna.cli': '0.1.100',
         },
       });
 
@@ -279,7 +279,7 @@ describe('Init Command', () => {
           omega: 'last',
         },
         devDependencies: {
-          '@lerna-lite/cli': `^${lernaVersion}`,
+          '@qoopido/lerna.cli': `^${lernaVersion}`,
         },
       });
     });
@@ -291,7 +291,7 @@ describe('Init Command', () => {
       await fs.outputJSON(pkgJsonPath, {
         dependencies: {
           alpha: 'first',
-          '@lerna-lite/cli': '0.1.100',
+          '@qoopido/lerna.cli': '0.1.100',
           omega: 'last',
         },
       });
@@ -301,7 +301,7 @@ describe('Init Command', () => {
       expect(await fs.readJSON(pkgJsonPath)).toMatchObject({
         dependencies: {
           alpha: 'first',
-          '@lerna-lite/cli': `^${lernaVersion}`,
+          '@qoopido/lerna.cli': `^${lernaVersion}`,
           omega: 'last',
         },
       });
@@ -314,14 +314,14 @@ describe('Init Command', () => {
       const lernaJsonPath = path.join(testDir, 'lerna.json');
 
       await fs.outputJSON(lernaJsonPath, {
-        '@lerna-lite/cli': '0.1.100',
+        '@qoopido/lerna.cli': '0.1.100',
         version: '1.2.3',
       });
 
       await lernaInit(testDir)();
 
       expect(await fs.readJSON(lernaJsonPath)).toEqual({
-        $schema: 'node_modules/@lerna-lite/cli/schemas/lerna-schema.json',
+        $schema: 'node_modules/@qoopido/lerna.cli/schemas/lerna-schema.json',
         packages: ['packages/*'],
         version: '1.2.3',
       });
@@ -348,8 +348,8 @@ describe('Init Command', () => {
       const pkgJsonPath = path.join(testDir, 'package.json');
 
       await fs.outputJSON(lernaJsonPath, {
-        '@lerna-lite/cli': '0.1.100',
-        $schema: 'node_modules/@lerna-lite/cli/schemas/lerna-schema.json',
+        '@qoopido/lerna.cli': '0.1.100',
+        $schema: 'node_modules/@qoopido/lerna.cli/schemas/lerna-schema.json',
         command: {
           bootstrap: {
             hoist: true,
@@ -359,14 +359,14 @@ describe('Init Command', () => {
       });
       await fs.outputJSON(pkgJsonPath, {
         devDependencies: {
-          '@lerna-lite/cli': lernaVersion,
+          '@qoopido/lerna.cli': lernaVersion,
         },
       });
 
       await lernaInit(testDir)('--exact');
 
       expect(await fs.readJSON(lernaJsonPath)).toEqual({
-        $schema: 'node_modules/@lerna-lite/cli/schemas/lerna-schema.json',
+        $schema: 'node_modules/@qoopido/lerna.cli/schemas/lerna-schema.json',
         command: {
           bootstrap: {
             hoist: true,

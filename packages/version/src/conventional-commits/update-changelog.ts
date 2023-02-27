@@ -1,4 +1,4 @@
-import { EOL, Package } from '@lerna-lite/core';
+import { EOL, Package } from '@qoopido/lerna.core';
 import conventionalChangelogCore, { Context } from 'conventional-changelog-core';
 import { Options as WriterOptions } from 'conventional-changelog-writer';
 import fs from 'fs-extra';

@@ -1,4 +1,4 @@
-import { Package } from '@lerna-lite/core';
+import { Package } from '@qoopido/lerna.core';
 import chalk from 'chalk';
 import npmlog from 'npmlog';
 
@@ -7,7 +7,7 @@ import { Tarball } from '../models';
 
 describe('log-packed', () => {
   const pkg = {
-    name: '@lerna-lite/core',
+    name: '@qoopido/lerna.core',
     version: '1.3.0',
     dependencies: {
       'tiny-tarball': '^1.0.0',
@@ -18,8 +18,8 @@ describe('log-packed', () => {
     location: '',
     manifestLocation: '',
     packed: {
-      id: '@lerna-lite/core@1.4.1',
-      name: '@lerna-lite/core',
+      id: '@qoopido/lerna.core@1.4.1',
+      name: '@qoopido/lerna.core',
       filename: 'lerna-lite.tar.tgz',
       files: [{ 'package-1': 'location1' }],
       version: '1.4.1',
@@ -53,7 +53,7 @@ describe('log-packed', () => {
     expect(logSpy).toHaveBeenCalledWith('', expect.stringContaining('own files: '));
     expect(logSpy).toHaveBeenCalledWith('', expect.stringContaining('total files: '));
     expect(logSpy).toHaveBeenCalledWith('', `--- ${chalk.bgMagenta('DRY-RUN')} details ---`);
-    expect(logSpy).toHaveBeenCalledWith('', 'package name: @lerna-lite/core');
+    expect(logSpy).toHaveBeenCalledWith('', 'package name: @qoopido/lerna.core');
     expect(logSpy).toHaveBeenCalledWith('dependencies:', '');
     expect(logSpy).toHaveBeenCalledWith('', 'tiny-tarball | ^1.0.0');
     expect(logSpy).toHaveBeenCalledWith('devDependencies:', '');
