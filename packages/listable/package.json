@@ -1,7 +1,7 @@
 {
   "name": "@qoopido/lerna.listable",
   "description": "Lerna-Lite listable utils",
-  "version": "1.15.1",
+  "version": "1.15.3-alpha.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "typings": "dist/index.d.ts",

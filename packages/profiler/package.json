@@ -1,7 +1,7 @@
 {
   "name": "@qoopido/lerna.profiler",
   "description": "Lerna-Lite Profiler used by certain optional commands (Run/Exec)",
-  "version": "1.15.1",
+  "version": "1.15.3-alpha.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "typings": "dist/index.d.ts",

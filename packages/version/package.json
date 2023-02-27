@@ -1,7 +1,7 @@
 {
   "name": "@qoopido/lerna.version",
   "description": "Bump version & write changelog of packages changed since the last release",
-  "version": "1.15.1",
+  "version": "1.15.3-alpha.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "typings": "dist/index.d.ts",
@@ -33,9 +33,9 @@
     "npm": ">=8.0.0"
   },
   "dependencies": {
-    "@qoopido/lerna.core": "workspace:*",
     "@octokit/plugin-enterprise-rest": "^6.0.1",
     "@octokit/rest": "^19.0.7",
+    "@qoopido/lerna.core": "workspace:*",
     "chalk": "^4.1.2",
     "conventional-changelog-angular": "^5.0.13",
     "conventional-changelog-core": "^4.2.4",
