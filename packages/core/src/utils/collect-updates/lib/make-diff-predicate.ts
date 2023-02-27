@@ -64,7 +64,13 @@ function diffSinceIn(committish, location, opts) {
 
   if (formattedLocation) {
     // avoid same-directory path.relative() === ""
-    args.push('--', formattedLocation);
+    const excludeSubpackages = execSync("find", [formattedLocation, "-mindepth", "2", "-type", "f", "-name", "package.json" ])
+      .split("\n")
+      .filter((file) => !!file)
+      .map((file) => `:^${path.dirname(file)}`);
+
+    // avoid same-directory path.relative() === ""
+    args.push('--', formattedLocation, ...excludeSubpackages);
   }
 
   log.silly('checking diff', formattedLocation);
