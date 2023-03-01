@@ -4,6 +4,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.15.3-alpha.1](https://github.com/lerna-lite/lerna-lite/compare/v1.15.3-alpha.0...v1.15.3-alpha.1) (2023-03-01)
+
+**Note:** Version bump only for package @qoopido/lerna.cli
+
 ## 1.15.3-alpha.0 (2023-02-27)
 
 ### Bug Fixes
