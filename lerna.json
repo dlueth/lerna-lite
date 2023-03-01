@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/@qoopido/lerna.cli/schemas/lerna-schema.json",
-  "version": "1.15.3-alpha.1",
+  "version": "1.15.3-alpha.2",
   "loglevel": "verbose",
   "npmClient": "pnpm",
   "command": {

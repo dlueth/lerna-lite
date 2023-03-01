@@ -1,7 +1,7 @@
 {
   "name": "@qoopido/lerna.diff",
   "description": "Lerna-Lite diff commmand - Diff all packages or a single package since the last release",
-  "version": "1.15.3-alpha.1",
+  "version": "1.15.3-alpha.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "typings": "dist/index.d.ts",

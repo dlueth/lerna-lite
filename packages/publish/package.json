@@ -1,7 +1,7 @@
 {
   "name": "@qoopido/lerna.publish",
   "description": "Publish packages in the current workspace",
-  "version": "1.15.3-alpha.1",
+  "version": "1.15.3-alpha.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "typings": "dist/index.d.ts",
