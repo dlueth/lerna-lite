@@ -64,8 +64,6 @@ function diffSinceIn(committish, location, opts) {
   const formattedLocation = slash(path.relative(opts.cwd, location));
 
   if (formattedLocation) {
-    console.log("###", opts);
-
     const excludeSubpackages = globby.sync('**/*/package.json', { cwd: formattedLocation, nodir: true, ignore: '**/node_modules/**' } as GlobbyOptions)
       .map((file) => `:^${formattedLocation}/${path.dirname(file)}`);
 
