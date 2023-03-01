@@ -727,6 +727,14 @@ pnpm install --lockfile-only --ignore-scripts
 yarn install --mode update-lockfile
 ```
 
+### `--subpackages-independent`
+
+```sh
+lerna version --subpackages-independent
+```
+
+When run with this flag, `lerna version` will not bump parent packages version numbers when their nested subpackages change. 
+
 ### `--yes`
 
 ```sh

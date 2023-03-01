@@ -1,5 +1,6 @@
 import log from 'npmlog';
 import minimatch from 'minimatch';
+import globby, { GlobbyOptions } from 'globby';
 import path from 'path';
 import slash from 'slash';
 
@@ -63,11 +64,10 @@ function diffSinceIn(committish, location, opts) {
   const formattedLocation = slash(path.relative(opts.cwd, location));
 
   if (formattedLocation) {
-    // avoid same-directory path.relative() === ""
-    const excludeSubpackages = execSync("find", [formattedLocation, "-mindepth", "2", "-type", "f", "-name", "package.json" ])
-      .split("\n")
-      .filter((file) => !!file)
-      .map((file) => `:^${path.dirname(file)}`);
+    console.log("###", opts);
+
+    const excludeSubpackages = globby.sync('**/*/package.json', { cwd: formattedLocation, nodir: true, ignore: '**/node_modules/**' } as GlobbyOptions)
+      .map((file) => `:^${formattedLocation}/${path.dirname(file)}`);
 
     // avoid same-directory path.relative() === ""
     args.push('--', formattedLocation, ...excludeSubpackages);

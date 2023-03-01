@@ -272,6 +272,11 @@ export default {
           'Strict match transform version numbers to an exact range (like "1.2.3") rather than with a caret (like ^1.2.3) when using `workspace:*`.',
         type: 'boolean',
       },
+      'subpackages-independent': {
+        describe:
+          'Prevents changes to nested subpackages from causing version bumps on parent packages as well.',
+        type: 'boolean',
+      },
       y: {
         describe: 'Skip all confirmation prompts.',
         alias: 'yes',
